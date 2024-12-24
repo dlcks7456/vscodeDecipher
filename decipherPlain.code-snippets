@@ -1,0 +1,206 @@
+{
+  "CintralStatus_Snippet": {
+    "prefix": "status",
+    "body": [
+      "본 프로젝트 신트럴 상에 STATUS가 Coimmissioned 상태가 아닙니다.",
+      "신트럴 커미션이 되어야 프로그래밍 착수가 가능하오니",
+      "커미션 후 WBS#와 프로젝트 세부일정(Timeline) 업데이트 후 회신 부탁드립니다."
+    ],
+    "description": "MailShortcuts/CintralStatus"
+  },
+
+  "CintralTimelineUpdate_Snippet": {
+    "prefix": "timeline",
+    "body": [
+      "본 프로젝트 신트럴 상에 Timeline 업데이트 부탁드립니다.",
+      "Timeline이 업데이트되어야 Project Box(QC Sheet)가 생성됩니다.",
+      "업데이트하신 후 회신 부탁드립니다."
+    ],
+    "description": "MailShortcuts/CintralTimelineUpdate"
+  },
+
+  "DataCheckComplete_Snippet": {
+    "prefix": "live.chk",
+    "body": ["본 조사 데이터 체크 완료했습니다.", "${1:풀런칭 부탁드립니다.}"],
+    "description": "MailShortcuts/DataCheckComplete"
+  },
+
+  "DataDelete_Snippet": {
+    "prefix": "data.delete",
+    "body": ["문의주신 데이터 삭제 처리 완료했습니다.", "확인 부탁드립니다."],
+    "description": "MailShortcuts/DataDelete"
+  },
+
+  "DataDelivery_Snippet": {
+    "prefix": "data.final",
+    "body": [
+      "본 프로젝트 데이터 이관드립니다.",
+      "첨부드리는 파일 확인 부탁드립니다."
+    ],
+    "description": "MailShortcuts/DataDelivery"
+  },
+
+  "DataMapDelivery_Snippet": {
+    "prefix": "data.map",
+    "body": [
+      "본 프로젝트 데이터 맵 전달드립니다.",
+      "첨부드리는 파일 확인 부탁드립니다."
+    ],
+    "description": "MailShortcuts/DataMapDelivery"
+  },
+
+  "DataMiddleDelivery_Snippet": {
+    "prefix": "data.middle",
+    "body": [
+      "본 프로젝트 현재 기준 중간 데이터 전달드립니다.",
+      "첨부드리는 파일 확인 부탁드립니다."
+    ],
+    "description": "MailShortcuts/DataMiddleDelivery"
+  },
+
+  "DataModified_Snippet": {
+    "prefix": "data.edit",
+    "body": [
+      "문의주신 데이터 수정 사항 반영 완료했습니다.",
+      "확인 부탁드립니다."
+    ],
+    "description": "MailShortcuts/DataModified"
+  },
+
+  "DataModifiedAndDeleted_Snippet": {
+    "prefix": "data.all",
+    "body": [
+      "문의주신 데이터 수정 및 삭제 사항 반영 완료했습니다.",
+      "확인 부탁드립니다."
+    ],
+    "description": "MailShortcuts/DataModifiedAndDeleted"
+  },
+
+  "LiveLinkOnOff_Snippet": {
+    "prefix": "live.onoff",
+    "body": [
+      "본 프로젝트 라이브 링크 전달드립니다.",
+      "[LIVE LINK]",
+      "- Online",
+      "${1:[TAB1]}",
+      "",
+      "- Offline",
+      "* LOGIN LINK",
+      "${2:[TAB2]}",
+      "",
+      "* USER LINK",
+      "${3:[TAB3]}",
+      ": 링크 상에 UID를 변경하여 개별 링크로 사용 가능합니다. (UID는 중복하여 사용 불가)",
+      ": 로그인 링크에서 입력한 ID로 USER LINK에 접속되는 방식입니다.",
+      "ex) UID = 4909 (로그인 링크에서 4909를 입력해도 동일한 링크로 이동)",
+      "${3:https://pacific.surveys.nielseniq.com/survey/selfserve/548/XXX?list=9&UID=4909}",
+      "",
+      "확인 부탁드립니다."
+    ],
+    "description": "MailShortcuts/LiveLinkOnOff"
+  },
+
+  "LiveLinkSend_Snippet": {
+    "prefix": "live",
+    "body": [
+      "본 프로젝트 라이브 링크 전달드립니다.",
+      "[LIVE LINK]",
+      "${1:[TAB1]}",
+      "",
+      "확인 부탁드립니다."
+    ],
+    "description": "MailShortcuts/LiveLinkSend"
+  },
+
+  "LiveLinkWithLoginSend_Snippet": {
+    "prefix": "live.login",
+    "body": [
+      "본 프로젝트 로그인 링크 전달드립니다.",
+      "[LOGIN LINK]",
+      "${1:[TAB1]}",
+      "",
+      "[USER LINK]",
+      "${2:[TAB2]}",
+      ": 링크 상에 UID를 변경하여 개별 링크로 사용 가능합니다. (UID는 중복하여 사용 불가)",
+      ": 로그인 링크에서 입력한 ID로 USER LINK에 접속되는 방식입니다.",
+      "ex) UID = 4909 (로그인 링크에서 4909를 입력해도 동일한 링크로 이동)",
+      "${3:https://pacific.surveys.nielseniq.com/survey/selfserve/548/XXX?list=9&UID=4909}",
+      "",
+      "확인 부탁드립니다."
+    ],
+    "description": "MailShortcuts/LiveLinkWithLoginSend"
+  },
+
+  "QcComplete_Snippet": {
+    "prefix": "qc",
+    "body": ["문의주신 수정 사항 반영 완료했습니다.", "확인 부탁드립니다."],
+    "description": "MailShortcuts/QcComplete"
+  },
+
+  "TestLinkOnOff_Snippet": {
+    "prefix": "test.onoff",
+    "body": [
+      "[TEST LINK]",
+      "- Online",
+      "${1:[TAB1]}",
+      "",
+      "- Offline (라이브 세팅 이후에도 링크는 동일)",
+      "* LOGIN LINK",
+      "${2:[TAB2]}",
+      "",
+      "* USER LINK",
+      "${3:[TAB3]}",
+      ": 링크 상에 UID를 변경하여 개별 링크로 사용 가능합니다. (UID는 중복하여 사용 불가)",
+      ": 로그인 링크에서 입력한 ID로 USER LINK에 접속되는 방식입니다.",
+      "ex) UID = 4909 (로그인 링크에서 4909를 입력해도 동일한 링크로 이동)",
+      "${3:https://pacific.surveys.nielseniq.com/survey/selfserve/548/XXX?list=9&UID=4909}",
+      "",
+      "수정 사항은 Project box의 Survey Programming 시트에 업데이트 부탁드립니다.",
+      "수정 사항 작성하실 때 Question/Detail/Stage/Type/Change code/Source/Opened Date는 필수로 입력 부탁드립니다.",
+      "워딩 수정은 테스트 링크 하단의 edit 기능으로 수정 부탁드리며, 프로그래밍 언어는 수정되지 않도록 부탁드립니다."
+    ],
+    "description": "MailShortcuts/TestLinkOnOff"
+  },
+
+  "TestLinkSend_Snippet": {
+    "prefix": "test",
+    "body": [
+      "본 프로젝트 테스트 링크 전달드립니다.",
+      "",
+      "[TEST LINK]",
+      "${1:[TAB1]}",
+      "",
+      "[PROJECT BOX]",
+      "${2:[TAB2]}",
+      "",
+      "수정 사항은 Project box의 Survey Programming 시트에 업데이트 부탁드립니다.",
+      "수정 사항 작성하실 때 Question/Detail/Stage/Type/Change code/Source/Opened Date는 필수로 입력 부탁드립니다.",
+      "워딩 수정은 테스트 링크 하단의 edit 기능으로 수정 부탁드리며, 프로그래밍 언어는 수정되지 않도록 부탁드립니다."
+    ],
+    "description": "MailShortcuts/TestLinkSend"
+  },
+
+  "TestLinkWithLoginSend_Snippet": {
+    "prefix": "test.login",
+    "body": [
+      "본 프로젝트 테스트 링크 전달드립니다.",
+      "[TEST LINK]",
+      "${1:[TAB1]}",
+      "",
+      "[LOGIN LINK] (라이브 세팅 이후에도 링크는 동일)",
+      "${2:[TAB2]}",
+      "",
+      "[USER LINK]",
+      "${3:[TAB3]}",
+      ": 링크 상에 UID를 변경하여 개별 링크로 사용 가능합니다. (UID는 중복하여 사용 불가)",
+      ": 로그인 링크에서 입력한 ID로 USER LINK에 접속되는 방식입니다.",
+      "ex) UID = 4909 (로그인 링크에서 4909를 입력해도 동일한 링크로 이동)",
+      "${3:https://pacific.surveys.nielseniq.com/survey/selfserve/548/XXX?list=9&UID=4909}",
+      "",
+      "수정 사항은 Project box의 Survey Programming 시트에 업데이트 부탁드립니다.",
+      "수정 사항 작성하실 때 Question/Detail/Stage/Type/Change code/Source/Opened Date는 필수로 입력 부탁드립니다.",
+      "워딩 수정은 테스트 링크 하단의 edit 기능으로 수정 부탁드리며, 프로그래밍 언어는 수정되지 않도록 부탁드립니다."
+    ],
+    "description": "MailShortcuts/TestLinkWithLoginSend"
+  }
+}

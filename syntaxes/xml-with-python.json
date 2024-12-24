@@ -1,0 +1,42 @@
+{
+  "scopeName": "text.xml.enhanced",
+  "injectionSelector": "L:text.xml",
+  "patterns": [
+    {
+      "name": "meta.block.exec.xml",
+      "begin": "<exec\\b[^>]*>",
+      "beginCaptures": {
+        "0": { "name": "entity.name.tag.exec.xml" }
+      },
+      "end": "</exec\\b[^>]*>",
+      "endCaptures": {
+        "0": { "name": "entity.name.tag.exec.xml" }
+      },
+      "patterns": [{ "include": "source.python" }]
+    },
+    {
+      "name": "meta.block.validate.xml",
+      "begin": "<validate\\b[^>]*>",
+      "beginCaptures": {
+        "0": { "name": "entity.name.tag.validate.xml" }
+      },
+      "end": "</validate\\b[^>]*>",
+      "endCaptures": {
+        "0": { "name": "entity.name.tag.validate.xml" }
+      },
+      "patterns": [{ "include": "source.python" }]
+    },
+    {
+      "name": "meta.block.virtual.xml",
+      "begin": "<virtual\\b[^>]*>",
+      "beginCaptures": {
+        "0": { "name": "entity.name.tag.virtual.xml" }
+      },
+      "end": "</virtual\\b[^>]*>",
+      "endCaptures": {
+        "0": { "name": "entity.name.tag.virtual.xml" }
+      },
+      "patterns": [{ "include": "source.python" }]
+    }
+  ]
+}

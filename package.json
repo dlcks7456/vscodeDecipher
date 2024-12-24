@@ -1,0 +1,448 @@
+{
+  "name": "decipher-niq-package",
+  "displayName": "decipher-niq-package",
+  "description": "Decipher ShortCut and Snippet for NIQ KOR SUD",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:xml"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "colors": [
+      {
+        "id": "xml.colorProvider",
+        "description": "Color provider for XML files",
+        "default": "#FFFFFF"
+      }
+    ],
+    "commands": [
+      {
+        "command": "decipher-niq-package.makeRow",
+        "title": "Make Row"
+      },
+      {
+        "command": "decipher-niq-package.makeRowAutoValue",
+        "title": "Make Row Auto Value"
+      },
+      {
+        "command": "decipher-niq-package.makeCol",
+        "title": "Make Col"
+      },
+      {
+        "command": "decipher-niq-package.makeColAutoValue",
+        "title": "Make Col Auto Value"
+      },
+      {
+        "command": "decipher-niq-package.makeChoice",
+        "title": "Make Choice"
+      },
+      {
+        "command": "decipher-niq-package.makeChoiceAutoValue",
+        "title": "Make Choice Auto Value"
+      },
+      {
+        "command": "decipher-niq-package.makeRowsMatchLabel",
+        "title": "Make Rows Match Label"
+      },
+      {
+        "command": "decipher-niq-package.makeColsMatchLabel",
+        "title": "Make Cols Match Label"
+      },
+      {
+        "command": "decipher-niq-package.makeColsMatchValueCommand",
+        "title": "Value와 매칭하여 <col> 생성"
+      },
+      {
+        "command": "decipher-niq-package.switchElement",
+        "title": "<row>/<col>을 스위칭합니다."
+      },
+      {
+        "command": "decipher-niq-package.changeLabelCode",
+        "title": "Code/Label 위치 스위칭"
+      },
+      {
+        "command": "decipher-niq-package.makeStrong",
+        "title": "<b> 태그 출력"
+      },
+      {
+        "command": "decipher-niq-package.makeAlt",
+        "title": "<alt> 태그 출력"
+      },
+      {
+        "command": "decipher-niq-package.makeQname",
+        "title": "<div class='qname'> 태그 출력"
+      },
+      {
+        "command": "decipher-niq-package.makeUnderline",
+        "title": "<u> 태그 출력"
+      },
+      {
+        "command": "decipher-niq-package.makeStrongColor",
+        "title": "<span class='f-highlight'> 태그 출력"
+      },
+      {
+        "command": "decipher-niq-package.makeUnderlineColor",
+        "title": "<span class='f-highlight'> & <u> 태그 출력"
+      },
+      {
+        "command": "decipher-niq-package.makeCases",
+        "title": "pipe 로직에 사용되는 case 생성"
+      },
+      {
+        "command": "decipher-niq-package.makeGroup",
+        "title": "Make Group Tag"
+      },
+      {
+        "command": "decipher-niq-package.makeLoopBlock",
+        "title": "Make Loop Block Tag"
+      },
+      {
+        "command": "decipher-niq-package.gridCol",
+        "title": "n점 척도 문항의 <col> 정리"
+      },
+      {
+        "command": "decipher-niq-package.loopLabel",
+        "title": "[loopvar: label] 생성"
+      },
+      {
+        "command": "decipher-niq-package.changeEntity",
+        "title": "Entity 형태로 변환"
+      },
+      {
+        "command": "decipher-niq-package.makePipe",
+        "title": "[pipe] 로직으로 변환"
+      },
+      {
+        "command": "decipher-niq-package.splitContext",
+        "title": "물음표 기준으로 <br/> 태그 추가"
+      },
+      {
+        "command": "decipher-niq-package.splitComment",
+        "title": "문장 기준(한 줄 내림)으로 <p> 태그로 변경"
+      },
+      {
+        "command": "decipher-niq-package.makeLooprowTag",
+        "title": "<looprow> 태그 생성"
+      },
+      {
+        "command": "decipher-niq-package.looprowMacro",
+        "title": "<looprow> 태그 생성"
+      },
+      {
+        "command": "decipher-niq-package.makeRowsMatchValuesGroup",
+        "title": "<group>이 적용된 <row>를 생성"
+      },
+      {
+        "command": "decipher-niq-package.makeColsWithGroup",
+        "title": "1개 <group>에 대한 <col> 생성"
+      },
+      {
+        "command": "decipher-niq-package.makeConjointAttrs",
+        "title": "Conjoint에 사용하는 <res> 태그 생성"
+      },
+      {
+        "command": "decipher-niq-package.makeMaxdiffAttrs",
+        "title": "Maxdiff에 사용하는 <res> 태그 생성"
+      },
+      {
+        "command": "decipher-niq-package.makeQuotaCells",
+        "title": "Quota 셀 조합 출력"
+      },
+      {
+        "command": "decipher-niq-package.makeRadio",
+        "title": "Make Radio Question"
+      },
+      {
+        "command": "decipher-niq-package.makeRating",
+        "title": "Make Rating Question"
+      },
+      {
+        "command": "decipher-niq-package.makeCheckbox",
+        "title": "Make Checkbox Question"
+      },
+      {
+        "command": "decipher-niq-package.makeSelect",
+        "title": "Make Select Question (Dropdown)"
+      },
+      {
+        "command": "decipher-niq-package.makeTextArea",
+        "title": "Make TextArea Question"
+      },
+      {
+        "command": "decipher-niq-package.makeText",
+        "title": "Make Text Question"
+      },
+      {
+        "command": "decipher-niq-package.makeNumber",
+        "title": "Make Number Question"
+      },
+      {
+        "command": "decipher-niq-package.makeFloat",
+        "title": "Make Float Question"
+      },
+      {
+        "command": "decipher-niq-package.makeVideo",
+        "title": "Make Video Question"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "decipher-niq-package.changeLabelCode",
+        "key": "ctrl+0",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeRow",
+        "key": "ctrl+1",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeRowAutoValue",
+        "key": "ctrl+shift+1",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeCol",
+        "key": "ctrl+2",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeColAutoValue",
+        "key": "ctrl+shift+2",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeChoice",
+        "key": "ctrl+3",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeChoiceAutoValue",
+        "key": "ctrl+shift+3",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeRowsMatchLabel",
+        "key": "ctrl+8",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeColsMatchLabel",
+        "key": "ctrl+9",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeColsMatchValueCommand",
+        "key": "ctrl+7",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.switchElement",
+        "key": "ctrl+shift+f12",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeStrong",
+        "key": "ctrl+b",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeAlt",
+        "key": "ctrl+shift+a",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeQname",
+        "key": "ctrl+q",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeUnderline",
+        "key": "ctrl+u",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeStrongColor",
+        "key": "ctrl+shift+b",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeUnderlineColor",
+        "key": "ctrl+shift+u",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeCases",
+        "key": "ctrl+4",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeGroup",
+        "key": "ctrl+5",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeLoopBlock",
+        "key": "ctrl+6",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.gridCol",
+        "key": "ctrl+shift+7",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.loopLabel",
+        "key": "ctrl+shift+l",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.changeEntity",
+        "key": "ctrl+shift+e",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makePipe",
+        "key": "ctrl+p",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.splitContext",
+        "key": "ctrl+m",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.splitComment",
+        "key": "ctrl+shift+m",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeLooprowTag",
+        "key": "ctrl+shift+6",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.looprowMacro",
+        "key": "ctrl+alt+6",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeRowsMatchValuesGroup",
+        "key": "ctrl+shift+g",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeColsWithGroup",
+        "key": "ctrl+shift+8",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeConjointAttrs",
+        "key": "ctrl+shift+f7",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeMaxdiffAttrs",
+        "key": "ctrl+shift+f8",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeQuotaCells",
+        "key": "ctrl+shift+q",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeRadio",
+        "key": "ctrl+r",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeRating",
+        "key": "ctrl+shift+r",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeCheckbox",
+        "key": "ctrl+shift+c",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeSelect",
+        "key": "ctrl+shift+s",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeTextArea",
+        "key": "ctrl+shift+t",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeText",
+        "key": "ctrl+t",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeNumber",
+        "key": "ctrl+n",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeFloat",
+        "key": "ctrl+shift+f",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeVideo",
+        "key": "ctrl+shift+v",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "xml",
+        "path": "./decipherXML.code-snippets"
+      },
+      {
+        "language": "plaintext",
+        "path": "./decipherPlain.code-snippets"
+      }
+    ],
+    "grammars": [
+      {
+        "scopeName": "text.xml.enhanced",
+        "path": "./syntaxes/xml-with-python.json",
+        "injectTo": [
+          "text.xml"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "cartesian-product-generator": "^1.1.1"
+  }
+}
