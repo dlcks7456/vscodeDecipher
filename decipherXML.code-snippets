@@ -1,6 +1,7 @@
 {
   "AutoBrand_Snippet": {
     "prefix": "auto.brand",
+    "scope": "xml",
     "body": [
       "<exec when=\"init\">",
       "def clean_txt(txt) :",
@@ -48,6 +49,7 @@
 
   "BrandModelListWithOpen_Snippet": {
     "prefix": "bm.list.oe",
+    "scope": "xml",
     "body": [
       "<define label=\"brand_list\">",
       "  <row label=\"b1\" value=\"1\">기아</row>",
@@ -582,6 +584,7 @@
 
   "BrandModelLogicSetting_Snippet": {
     "prefix": "bm.setting",
+    "scope": "xml",
     "body": [
       "${0:bmQuestionHanler('.bm-question'); // enter in the respview.client.js}",
       "",
@@ -730,6 +733,7 @@
 
   "BrandModelOneAnswer_Snippet": {
     "prefix": "bm.simple",
+    "scope": "xml",
     "body": [
       "<select ",
       "    label=\"${1:[QID]}\"",
@@ -768,6 +772,7 @@
 
   "BrandModelOneAnswerWithNone_Snippet": {
     "prefix": "bm.none",
+    "scope": "xml",
     "body": [
       "<block label=\"${1:[QID]}_block\">",
       "",
@@ -830,6 +835,7 @@
 
   "BrandModelOneAnswerWithOpen_Snippet": {
     "prefix": "bm.open",
+    "scope": "xml",
     "body": [
       "<block label=\"${1:[QID]}_block\">",
       "",
@@ -885,6 +891,7 @@
 
   "BrandModelOneAnswerWithOpenNone_Snippet": {
     "prefix": "bm.all",
+    "scope": "xml",
     "body": [
       "<block label=\"${1:[QID]}_block\">",
       "",
@@ -957,6 +964,7 @@
 
   "PTbase_Snippet": {
     "prefix": "bm.pt",
+    "scope": "xml",
     "body": [
       "<text",
       "  label=\"PTbase\"",
@@ -986,6 +994,7 @@
 
   "StepByStepBM_Snippet": {
     "prefix": "sbs.bm",
+    "scope": "xml",
     "body": [
       "<note>브랜드/모델 레이아웃이 갑자기 깨지는 경우 모델/PT 문항 rightOf 옵션이 삭제됐는지 검토</note>",
       "<block label=\"${1:[QID]}_block\">",
@@ -1113,6 +1122,7 @@
 
   "StepByStepBMRows_Snippet": {
     "prefix": "sbs.bm.rows",
+    "scope": "xml",
     "body": [
       "<note>브랜드/모델 레이아웃이 갑자기 깨지는 경우 모델/PT 문항 rightOf 옵션이 삭제됐는지 검토</note>",
       "<block label=\"${1:[QID]}_block\">",
@@ -1256,6 +1266,7 @@
 
   "StepByStepBMSetting_Snippet": {
     "prefix": "sbs.bm.setting",
+    "scope": "xml",
     "body": [
       "<define label=\"brand_list\">",
       "  <row label=\"b1\" value=\"1\">기아</row>",
@@ -1874,6 +1885,7 @@
 
   "ConjointAttrRotation_Snippet": {
     "prefix": "dcm.rotation",
+    "scope": "xml",
     "body": [
       "<style name=\"question.after\"><![CDATA[",
       "<script>",
@@ -1901,6 +1913,7 @@
 
   "ConjointCSS_Snippet": {
     "prefix": "dcm.css",
+    "scope": "xml",
     "body": [
       "/* add this only if you have scrollbars in IE7,8",
       "div.dcm {",
@@ -1961,6 +1974,7 @@
 
   "ConjointExec_Snippet": {
     "prefix": "dcm.exec",
+    "scope": "xml",
     "body": [
       "def setupDCMFile(fname, fileDelimiter=\"\t\"):",
       "    f = open(\"%s/%s\" % (gv.survey.path, fname))",
@@ -2000,6 +2014,7 @@
 
   "ConjointMobile_Snippet": {
     "prefix": "dcm.mobile",
+    "scope": "xml",
     "body": [
       "<note># CSS</note>",
       "\\@keyframes slideAnimation {",
@@ -2161,6 +2176,7 @@
 
   "ConjointQuestion_Snippet": {
     "prefix": "dcm.question",
+    "scope": "xml",
     "body": [
       "<block label=\"${1:[QID]}_dcm_block\">",
       "",
@@ -2386,6 +2402,7 @@
 
   "ConjointRes_Snippet": {
     "prefix": "dcm.res",
+    "scope": "xml",
     "body": [
       "<res label=\"[DCM_QID]_legend1\">Attr1</res>",
       "<res label=\"[DCM_QID]_legend2\">Attr2</res>",
@@ -2405,12 +2422,14 @@
 
   "BoxShadow_Snippet": {
     "prefix": "shadow",
+    "scope": "xml",
     "body": ["box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);"],
     "description": "CSSLibrary/BoxShadow"
   },
 
   "GridColumnStyle_Snippet": {
     "prefix": "grid.col.css",
+    "scope": "xml",
     "body": [
       ".grid-cols-3 .answers{",
       "  display: grid !important;",
@@ -2452,6 +2471,7 @@
 
   "GridListModeCSS_Snippet": {
     "prefix": "grid.list",
+    "scope": "xml",
     "body": [
       "<style name=\"page.head\"><![CDATA[",
       "<style>",
@@ -2480,12 +2500,14 @@
 
   "ImageClassNames_Snippet": {
     "prefix": "img.class",
+    "scope": "xml",
     "body": ["survey_image survey-image-medium fit"],
     "description": "CSSLibrary/ImageClassNames"
   },
 
   "ImageWaterMarkCSS_Snippet": {
     "prefix": "img.wm.css",
+    "scope": "xml",
     "body": [
       ".${1:[WATERMARK_IMAGE_CLASS]} img {",
       "    width: 100%!important;",
@@ -2500,6 +2522,7 @@
 
   "LeftRightCSS_Snippet": {
     "prefix": "left.right.css",
+    "scope": "xml",
     "body": [
       "<style label=\"type_a_text\" name=\"question.left-blank-legend\"><![CDATA[",
       "<\\$(tag) class=\"cell empty empty-left empty-\\$(pos) unused \\${\"desktop\" if this.grouping.cols else \"mobile\"} border-collapse\">타입 A</\\$(tag)>",
@@ -2591,6 +2614,7 @@
 
   "Sticky_Snippet": {
     "prefix": "sticky",
+    "scope": "xml",
     "body": [
       "${1:.sticky-class-name} {",
       "  position: sticky;",
@@ -2606,6 +2630,7 @@
 
   "Table_Snippet": {
     "prefix": "table",
+    "scope": "xml",
     "body": [
       ".show-table {",
       "  padding: 0;",
@@ -2641,6 +2666,7 @@
 
   "WaterMarkCSS_Snippet": {
     "prefix": "watermark",
+    "scope": "xml",
     "body": [
       "form {",
       "  position: relative;",
@@ -2673,60 +2699,70 @@
 
   "CustomButtonAutoContinue_Snippet": {
     "prefix": "btn.auto",
+    "scope": "xml",
     "body": ["btn-focus auto-continue"],
     "description": "CustomButton/CustomButtonAutoContinue"
   },
 
   "CustomButtonBottom_Snippet": {
     "prefix": "btn.bot",
+    "scope": "xml",
     "body": ["ss:rowClassNames=\"btn-bot\""],
     "description": "CustomButton/CustomButtonBottom"
   },
 
   "CustomButtonFocus_Snippet": {
     "prefix": "btn.focus",
+    "scope": "xml",
     "body": ["btn-focus"],
     "description": "CustomButton/CustomButtonFocus"
   },
 
   "CustomButtonMinColumn_Snippet": {
     "prefix": "btn.min",
+    "scope": "xml",
     "body": ["min-col-2"],
     "description": "CustomButton/CustomButtonMinColumn"
   },
 
   "CustomButtonStyle_Snippet": {
     "prefix": "btn",
+    "scope": "xml",
     "body": ["ss:questionClassNames=\"sp-custom-btn btn-mw-500${1: btn-cols-1}\""],
     "description": "CustomButton/CustomButtonStyle"
   },
 
   "CustomButtonTop_Snippet": {
     "prefix": "btn.top",
+    "scope": "xml",
     "body": ["ss:rowClassNames=\"btn-top\""],
     "description": "CustomButton/CustomButtonTop"
   },
 
   "CustomCard_Snippet": {
     "prefix": "card",
+    "scope": "xml",
     "body": ["sp-custom-card"],
     "description": "CustomCard/CustomCard"
   },
 
   "CustomCardAbleContinue_Snippet": {
     "prefix": "card.able",
+    "scope": "xml",
     "body": ["able-continue"],
     "description": "CustomCard/CustomCardAbleContinue"
   },
 
   "CustomCardAutoContinue_Snippet": {
     "prefix": "card.auto",
+    "scope": "xml",
     "body": ["auto-continue"],
     "description": "CustomCard/CustomCardAutoContinue"
   },
 
   "CustomCardLoopColumn_Snippet": {
     "prefix": "custom.loop",
+    "scope": "xml",
     "body": [
       "<block label=\"${1:[QID]}_block\">",
       "  <checkbox ",
@@ -2788,6 +2824,7 @@
 
   "CustomCardLoopFlex_Snippet": {
     "prefix": "custom.loop.flex",
+    "scope": "xml",
     "body": [
       "<block label=\"${1:[QID]}_block\">",
       "  <checkbox ",
@@ -2849,6 +2886,7 @@
 
   "CustomRankSort_Snippet": {
     "prefix": "custom.rank",
+    "scope": "xml",
     "body": [
       "<style label=\"custom_rank\" arg:colCnt=\"${1:1}\" arg:autoClick=\"true\" arg:autoContinue=\"false\" arg:ableNone=\"${2:2}\" arg:noneLabel=\"${3:r99}\" arg:showAnswers=\"true\" arg:ableSort=\"true\" arg:showGroups=\"false\" arg:toggle=\"false\" arg:showCnt=\"true\" name=\"question.after\"><![CDATA[",
       "\\@if len(this.cols) > 1",
@@ -2897,12 +2935,14 @@
 
   "CustomRankSortCenter_Snippet": {
     "prefix": "custom.rank.center",
+    "scope": "xml",
     "body": ["ss:questionClassNames=\"rank-text-center\""],
     "description": "CustomRank/CustomRankSortCenter"
   },
 
   "CustomRankSortCopy_Snippet": {
     "prefix": "custom.rank.copy",
+    "scope": "xml",
     "body": [
       "<style copy=\"custom_rank\" arg:autoClick=\"true\" arg:autoContinue=\"false\" arg:colCnt=\"1\" arg:noneLabel=\"null\" arg:ableNone=\"2\" arg:showAnswers=\"true\" arg:ableSort=\"true\" arg:showGroups=\"false\" arg:toggle=\"false\" arg:showCnt=\"true\" name=\"question.after\"/>"
     ],
@@ -2911,6 +2951,7 @@
 
   "CustomRankSortLeftGroupCSS_Snippet": {
     "prefix": "custom.rank.left",
+    "scope": "xml",
     "body": [
       "<style label=\"custom_rank_grid_group\" name=\"page.head\"><![CDATA[",
       "<style>",
@@ -2959,12 +3000,14 @@
 
   "CustomRankSortLeftGroupCSSCopy_Snippet": {
     "prefix": "custom.rank.left.copy",
+    "scope": "xml",
     "body": ["<style copy=\"custom_rank_grid_group\" name=\"page.head\"/>"],
     "description": "CustomRank/CustomRankSortLeftGroupCSSCopy"
   },
 
   "CustomRankSortObserve_Snippet": {
     "prefix": "custom.rank.obs",
+    "scope": "xml",
     "body": [
       "<style name=\"question.after\"><![CDATA[",
       "<script>",
@@ -2998,6 +3041,7 @@
 
   "CustomLeftRight_Snippet": {
     "prefix": "custom.left.right",
+    "scope": "xml",
     "body": [
       "<style copy=\"custom_rating\" arg:qmode=\"rating\" arg:autoContinue=\"false\" arg:autoNumber=\"true\" arg:btnDirection=\"row\" arg:leftText=\"${1:[LEFT_TEXT]}\" arg:rightText=\"${2:[RIGHT_TEXT]}\" arg:showArrow=\"true\" arg:showGroup=\"true\" arg:disableContinue=\"true\" arg:hold=\"0.5\" name=\"question.after\"/>"
     ],
@@ -3006,6 +3050,7 @@
 
   "CustomRating_Snippet": {
     "prefix": "custom.rate",
+    "scope": "xml",
     "body": [
       "<style label=\"custom_rating\" arg:hold=\"0.5\" arg:qmode=\"rating\" arg:autoContinue=\"false\" arg:autoNumber=\"true\" arg:btnDirection=\"row\" arg:leftText=\"\" arg:rightText=\"\" arg:showArrow=\"false\" arg:showGroup=\"true\" arg:disableContinue=\"true\" name=\"question.after\"><![CDATA[",
       "\\@if (this.grouping.rows and len(this.rows) > 1) or (this.grouping.cols and len(this.cols) > 1)",
@@ -3068,6 +3113,7 @@
 
   "CustomRatingChangeColText_Snippet": {
     "prefix": "custom.rate.obs",
+    "scope": "xml",
     "body": [
       "<style name=\"question.after\"><![CDATA[",
       "<script>",
@@ -3169,6 +3215,7 @@
 
   "CustomRatingCopy_Snippet": {
     "prefix": "custom.rate.copy",
+    "scope": "xml",
     "body": [
       "<style copy=\"custom_rating\" arg:qmode=\"rating\" arg:autoContinue=\"false\" arg:autoNumber=\"true\" arg:btnDirection=\"row\" arg:leftText=\"\" arg:rightText=\"\" arg:showArrow=\"false\" arg:showGroup=\"true\" arg:disableContinue=\"true\" arg:hold=\"0.5\" name=\"question.after\"/>"
     ],
@@ -3177,6 +3224,7 @@
 
   "CustomRatingLower_Snippet": {
     "prefix": "custom.rate.low",
+    "scope": "xml",
     "body": [
       "<style copy=\"custom_rating\" arg:qmode=\"low\" arg:autoContinue=\"false\" arg:autoNumber=\"true\" arg:btnDirection=\"column\" arg:leftText=\"\" arg:rightText=\"\" arg:showArrow=\"true\" arg:showGroup=\"true\" arg:disableContinue=\"true\" arg:hold=\"0.5\" name=\"question.after\"/>"
     ],
@@ -3185,6 +3233,7 @@
 
   "CustomRatingUpper_Snippet": {
     "prefix": "custom.rate.up",
+    "scope": "xml",
     "body": [
       "<style copy=\"custom_rating\" arg:qmode=\"up\" arg:autoContinue=\"false\" arg:autoNumber=\"true\" arg:btnDirection=\"column\" arg:leftText=\"\" arg:rightText=\"\" arg:showArrow=\"true\" arg:showGroup=\"true\" arg:disableContinue=\"true\" arg:hold=\"0.5\" name=\"question.after\"/>"
     ],
@@ -3193,144 +3242,168 @@
 
   "Condition_Snippet": {
     "prefix": "cond",
+    "scope": "xml",
     "body": ["cond=\"$0\""],
     "description": "DecipherOptions/Condition"
   },
 
   "CopyRows_Snippet": {
     "prefix": "copy",
+    "scope": "xml",
     "body": ["onLoad=\"copy('${1:[QID]}', rows=True${2:, exclude=''}$0)\""],
     "description": "DecipherOptions/CopyRows"
   },
 
   "DoNotTranslate_Snippet": {
     "prefix": "dnt",
+    "scope": "xml",
     "body": ["translateable=\"0\""],
     "description": "DecipherOptions/DoNotTranslate"
   },
 
   "ExclusizeRow_Snippet": {
     "prefix": "er",
+    "scope": "xml",
     "body": ["exclusive=\"1\" randomize=\"0\" ss:rowClassNames=\"btn-bot\""],
     "description": "DecipherOptions/ExclusizeRow"
   },
 
   "InputMaxWidthMobile_Snippet": {
     "prefix": "mo.input",
+    "scope": "xml",
     "body": ["ss:questionClassNames=\"input-max-width\""],
     "description": "DecipherOptions/InputMaxWidthMobile"
   },
 
   "Legends_Snippet": {
     "prefix": "legend",
+    "scope": "xml",
     "body": ["colLegendRows=\"$0\"", "rowLegend=\"both\"", "colLegend=\"both\""],
     "description": "DecipherOptions/Legends"
   },
 
   "ListDisplay_Snippet": {
     "prefix": "ld",
+    "scope": "xml",
     "body": ["ss:listDisplay=\"0\""],
     "description": "DecipherOptions/ListDisplay"
   },
 
   "OpenEnd_Snippet": {
     "prefix": "oe",
+    "scope": "xml",
     "body": ["open=\"1\" openSize=\"25\" randomize=\"0\""],
     "description": "DecipherOptions/OpenEnd"
   },
 
   "PostText_Snippet": {
     "prefix": "potext",
+    "scope": "xml",
     "body": ["ss:postText=\"$0\""],
     "description": "DecipherOptions/PostText"
   },
 
   "PreText_Snippet": {
     "prefix": "prtext",
+    "scope": "xml",
     "body": ["ss:preText=\"$0\""],
     "description": "DecipherOptions/PreText"
   },
 
   "Randomize_Snippet": {
     "prefix": "r.1",
+    "scope": "xml",
     "body": ["randomize=\"1\""],
     "description": "DecipherOptions/Randomize"
   },
 
   "RandomizeChildren_Snippet": {
     "prefix": "r.child",
+    "scope": "xml",
     "body": ["randomizeChildren=\"1\""],
     "description": "DecipherOptions/RandomizeChildren"
   },
 
   "RandomizeFixed_Snippet": {
     "prefix": "r.0",
+    "scope": "xml",
     "body": ["randomize=\"0\""],
     "description": "DecipherOptions/RandomizeFixed"
   },
 
   "Rating_Snippet": {
     "prefix": "rating",
+    "scope": "xml",
     "body": ["type=\"rating\""],
     "description": "DecipherOptions/Rating"
   },
 
   "Shuffle_Snippet": {
     "prefix": "sh",
+    "scope": "xml",
     "body": ["shuffle=\"rows\""],
     "description": "DecipherOptions/Shuffle"
   },
 
   "ShuffleBy_Snippet": {
     "prefix": "shb",
+    "scope": "xml",
     "body": ["shuffleBy=\"$0\""],
     "description": "DecipherOptions/ShuffleBy"
   },
 
   "SurveyDisplayDesktop_Snippet": {
     "prefix": "display.d",
+    "scope": "xml",
     "body": ["surveyDisplay=\"desktop\""],
     "description": "DecipherOptions/SurveyDisplayDesktop"
   },
 
   "SurveyDisplayMobile_Snippet": {
     "prefix": "display.m",
+    "scope": "xml",
     "body": ["surveyDisplay=\"mobile\""],
     "description": "DecipherOptions/SurveyDisplayMobile"
   },
 
   "Verify_Snippet": {
     "prefix": "verify",
+    "scope": "xml",
     "body": ["verify=\"${1:range(0,100)}\"$0"],
     "description": "DecipherOptions/Verify"
   },
 
   "WhereExecute_Snippet": {
     "prefix": "execute",
+    "scope": "xml",
     "body": ["where=\"execute\""],
     "description": "DecipherOptions/WhereExecute"
   },
 
   "WhereExecuteNotdp_Snippet": {
     "prefix": "en",
+    "scope": "xml",
     "body": ["where=\"execute,survey,notdp\""],
     "description": "DecipherOptions/WhereExecuteNotdp"
   },
 
   "WhereNotdp_Snippet": {
     "prefix": "notdp",
+    "scope": "xml",
     "body": ["where=\"notdp\""],
     "description": "DecipherOptions/WhereNotdp"
   },
 
   "WhereReport_Snippet": {
     "prefix": "rep",
+    "scope": "xml",
     "body": ["where=\"report\""],
     "description": "DecipherOptions/WhereReport"
   },
 
   "AddressAnswerQuestion_Snippet": {
     "prefix": "address",
+    "scope": "xml",
     "body": [
       "<text ",
       "  label=\"${1:[QID]}\"",
@@ -3423,6 +3496,7 @@
 
   "AreaQuestionExample_Snippet": {
     "prefix": "area",
+    "scope": "xml",
     "body": [
       "<select ",
       "  label=\"${1:[QID]}\">",
@@ -3771,6 +3845,7 @@
 
   "FloatCustom_Snippet": {
     "prefix": "float.html",
+    "scope": "xml",
     "body": [
       "<float ",
       "    label=\"${1:[QID]}\"",
@@ -3805,6 +3880,7 @@
 
   "imageUploader_Snippet": {
     "prefix": "img.upload",
+    "scope": "xml",
     "body": [
       "<image label=\"${1:[QID]}\" optional=\"0\" sst=\"0\" uses=\"imgupload.1\" ${3:imgupload:providenoanswer=\"0\"}>",
       "  <title>${2:[TITLE]}</title>",
@@ -3819,6 +3895,7 @@
 
   "MA_base_MA_Snippet": {
     "prefix": "mama",
+    "scope": "xml",
     "body": [
       "<define label=\"${1:[DEFINE_LIST]}\">",
       "$0",
@@ -3855,6 +3932,7 @@
 
   "MA_base_Rank_Snippet": {
     "prefix": "mark",
+    "scope": "xml",
     "body": [
       "<define label=\"${1:[DEFINE_LIST]}\">",
       "$0",
@@ -3897,6 +3975,7 @@
 
   "MA_base_SA_Snippet": {
     "prefix": "masa",
+    "scope": "xml",
     "body": [
       "<define label=\"${1:[DEFINE_LIST]}\">",
       "$0",
@@ -3932,6 +4011,7 @@
 
   "NetPromoterScore_Snippet": {
     "prefix": "nps",
+    "scope": "xml",
     "body": [
       "<number ",
       "    label=\"${1:[QID]}\"",
@@ -3956,12 +4036,14 @@
 
   "NetPromoterScoreOptions_Snippet": {
     "prefix": "nps.opt",
+    "scope": "xml",
     "body": ["nps:legendPosition=\"Below\"", "nps:leftLegend=\"\"", "nps:midLegend=\"\"", "nps:rightLegend=\"\""],
     "description": "DecipherQuestions/NetPromoterScoreOptions"
   },
 
   "PageTimer_Snippet": {
     "prefix": "timer",
+    "scope": "xml",
     "body": [
       "<checkbox ",
       "    label=\"${1:[QID]}\"",
@@ -4004,6 +4086,7 @@
 
   "PageTimerCopy_Snippet": {
     "prefix": "timer.copy",
+    "scope": "xml",
     "body": [
       "<radio ",
       "  label=\"${1:[QID]}\"",
@@ -4021,6 +4104,7 @@
 
   "PhoneNumberAnswerQuestion_Snippet": {
     "prefix": "phone",
+    "scope": "xml",
     "body": [
       "<text ",
       "    label=\"${1:[QID]}\"",
@@ -4069,6 +4153,7 @@
 
   "TranslateSet_Snippet": {
     "prefix": "tr.set",
+    "scope": "xml",
     "body": [
       "<exec>",
       "qArray = []",
@@ -4115,6 +4200,7 @@
 
   "TranslateVariable_Snippet": {
     "prefix": "tr.var",
+    "scope": "xml",
     "body": [
       "<textarea ",
       "   label=\"${1:[QID]}_ko\"",
@@ -4128,12 +4214,14 @@
 
   "Alt_Snippet": {
     "prefix": "alt",
+    "scope": "xml",
     "body": ["<alt>$0</alt>"],
     "description": "DecipherTag/Alt"
   },
 
   "BlockTag_Snippet": {
     "prefix": "block",
+    "scope": "xml",
     "body": [
       "<block label=\"${1:[TAB1]}\" cond=\"${2}\">",
       "",
@@ -4148,6 +4236,7 @@
 
   "CautionPage_Snippet": {
     "prefix": "cp",
+    "scope": "xml",
     "body": [
       "<html label=\"${1:[QID]}\" where=\"survey\">",
       "<div class=\"caution-page\">",
@@ -4162,36 +4251,42 @@
 
   "CommentTag_Snippet": {
     "prefix": "comment",
+    "scope": "xml",
     "body": ["<comment>$0</comment>"],
     "description": "DecipherTag/CommentTag"
   },
 
   "ConditionTag_Snippet": {
     "prefix": "condition",
+    "scope": "xml",
     "body": ["<condition label=\"${1:[QID]}\" cond=\"${2:[COND]}\">$0</condition>"],
     "description": "DecipherTag/ConditionTag"
   },
 
   "DefineList_Snippet": {
     "prefix": "define",
+    "scope": "xml",
     "body": ["<define label=\"${1:[LIST_NAME]}\">", "$0", "</define>"],
     "description": "DecipherTag/DefineList"
   },
 
   "ExecTag_Snippet": {
     "prefix": "exec",
+    "scope": "xml",
     "body": ["<exec>", "$0", "</exec>"],
     "description": "DecipherTag/ExecTag"
   },
 
   "GotoTag_Snippet": {
     "prefix": "goto",
+    "scope": "xml",
     "body": ["<goto cond=\"${1}\" target=\"${2}\"/>$0"],
     "description": "DecipherTag/GotoTag"
   },
 
   "HtmlTag_Snippet": {
     "prefix": "html",
+    "scope": "xml",
     "body": [
       "<html label=\"${1:[QID]}\" where=\"survey\">",
       "<div class=\"comment-box\">",
@@ -4205,6 +4300,7 @@
 
   "ImageWaterMark_Snippet": {
     "prefix": "img.wm",
+    "scope": "xml",
     "body": [
       "[image ${1:[FILE_NAME]}.png protected=1 value=\\${record} fontSize=70 placement=repeat color=#000000 alpha=10]"
     ],
@@ -4213,42 +4309,49 @@
 
   "Insert_Snippet": {
     "prefix": "insert",
+    "scope": "xml",
     "body": ["<insert source=\"${1:[DEFINE_LIST]}\"/>$0"],
     "description": "DecipherTag/Insert"
   },
 
   "Noanswer_Snippet": {
     "prefix": "noanswer",
+    "scope": "xml",
     "body": ["<noanswer label=\"${1:na}\">$0</noanswer>"],
     "description": "DecipherTag/Noanswer"
   },
 
   "Note_Snippet": {
     "prefix": "note",
+    "scope": "xml",
     "body": ["<note>$0</note>"],
     "description": "DecipherTag/Note"
   },
 
   "QCNote_Snippet": {
     "prefix": "qc",
+    "scope": "xml",
     "body": ["<note sst=\"0\">", "## VER ${1:1}", "#### ${2:QID}", "- $0", "</note>"],
     "description": "DecipherTag/QCNote"
   },
 
   "QuotaTag_Snippet": {
     "prefix": "quota",
+    "scope": "xml",
     "body": ["<quota label=\"${1:[QUOTA]}\" sheet=\"${1:[QUOTA]}\"/>", "<suspend/>"],
     "description": "DecipherTag/QuotaTag"
   },
 
   "ResTag_Snippet": {
     "prefix": "res",
+    "scope": "xml",
     "body": ["<res label=\"${1:[RES]}\">$0</res>"],
     "description": "DecipherTag/ResTag"
   },
 
   "Screenout_Snippet": {
     "prefix": "scr",
+    "scope": "xml",
     "body": [
       "<exec>",
       "status(${1:[COND]}, \"${2:[QID]}\")",
@@ -4265,24 +4368,28 @@
 
   "SuspendTag_Snippet": {
     "prefix": "su",
+    "scope": "xml",
     "body": ["<suspend/>"],
     "description": "DecipherTag/SuspendTag"
   },
 
   "TermTag_Snippet": {
     "prefix": "term",
+    "scope": "xml",
     "body": ["<term label=\"${1:[QID]}_Term\" cond=\"${2:[COND]}\">${1:[QID]} term</term>"],
     "description": "DecipherTag/TermTag"
   },
 
   "ValidateTag_Snippet": {
     "prefix": "validate",
+    "scope": "xml",
     "body": ["<validate>", "$0", "</validate>"],
     "description": "DecipherTag/ValidateTag"
   },
 
   "VarTag_Snippet": {
     "prefix": "var",
+    "scope": "xml",
     "body": [
       "<var name=\"${0:[variablename]}\"${1: unique=\"1\"}${2: required=\"1\"}${3: filename=\"invited.txt\"} />"
     ],
@@ -4291,12 +4398,14 @@
 
   "VirtualTag_Snippet": {
     "prefix": "virtual",
+    "scope": "xml",
     "body": ["<virtual>", "$0", "</virtual>"],
     "description": "DecipherTag/VirtualTag"
   },
 
   "Captcha_Snippet": {
     "prefix": "captcha",
+    "scope": "xml",
     "body": [
       "<logic",
       "  uses=\"recaptcha.1\"",
@@ -4309,6 +4418,7 @@
 
   "CrosstabsSend_Snippet": {
     "prefix": "crosstabs",
+    "scope": "xml",
     "body": [
       "<logic label=\"crosstab_send\"",
       "    crosstabs:message=\"Today Crosstabs\"",
@@ -4323,6 +4433,7 @@
 
   "ReportSend_Snippet": {
     "prefix": "report",
+    "scope": "xml",
     "body": [
       "<logic label=\"report_send\"",
       "    fieldreport:message=\"Today Response Summary\"",
@@ -4339,6 +4450,7 @@
 
   "SFTPSend_Snippet": {
     "prefix": "ftp",
+    "scope": "xml",
     "body": [
       "<logic",
       "  label=\"${1:[QID]}\" ",
@@ -4361,12 +4473,14 @@
 
   "Accordion_Snippet": {
     "prefix": "acco",
+    "scope": "xml",
     "body": ["uses=\"accordion.2\""],
     "description": "DynamicQuestions/Accordion"
   },
 
   "AccordionJS_Snippet": {
     "prefix": "acco.js",
+    "scope": "xml",
     "body": [
       "<res label=\"acco_error\"><div class=\"acco-err-rows\" data-rows=\"%s\"></div></res>",
       "",
@@ -4388,12 +4502,14 @@
 
   "Atmable_Snippet": {
     "prefix": "atm",
+    "scope": "xml",
     "body": ["uses=\"atmtable.6\""],
     "description": "DynamicQuestions/Atmable"
   },
 
   "AudioQuestion_Snippet": {
     "prefix": "audio",
+    "scope": "xml",
     "body": [
       "<checkbox ",
       "  label=\"${1:[QID]}\"",
@@ -4413,6 +4529,7 @@
 
   "Cardrating_Snippet": {
     "prefix": "cardrating",
+    "scope": "xml",
     "body": [
       "uses=\"cardrating.1\"",
       "cardrating:animation=\"fast\"",
@@ -4423,6 +4540,7 @@
 
   "CardratingOptions_Snippet": {
     "prefix": "cardrating.opt",
+    "scope": "xml",
     "body": [
       "${1:<res label=\"cardrating_msg\">'계속' 버튼을 눌러<br/>다음 질문에 응답해주세요.</res>}",
       "",
@@ -4438,6 +4556,7 @@
 
   "Cardsort_Snippet": {
     "prefix": "cardsort",
+    "scope": "xml",
     "body": [
       "cardsort:animationDuration=\"200\"",
       "cardsort:dragAndDrop=\"0\"",
@@ -4449,6 +4568,7 @@
 
   "CardsortAutoNext_Snippet": {
     "prefix": "cardsort.auto.next",
+    "scope": "xml",
     "body": [
       "<note>기타 오픈을 제외하고 자동으로 넘기기</note>",
       "<style name=\"question.after\" wrap=\"ready\" label=\"cardsort_other_focus\"><![CDATA[",
@@ -4551,6 +4671,7 @@
 
   "CardsortChangeCurrentText_Snippet": {
     "prefix": "cardsort.show.text",
+    "scope": "xml",
     "body": [
       "<style label=\"cardsort_current_card\" name=\"question.after\" wrap=\"ready\"><![CDATA[",
       "/* <span class=\"cardsort-show-text\"> enter this tag in the title </span> */",
@@ -4592,12 +4713,14 @@
 
   "CardsortChangeCurrentTextCopy_Snippet": {
     "prefix": "cardsort.show.text.copy",
+    "scope": "xml",
     "body": ["<style copy=\"cardsort_current_card\" name=\"question.after\" wrap=\"ready\"/>"],
     "description": "DynamicQuestions/CardsortChangeCurrentTextCopy"
   },
 
   "CardsortError_Snippet": {
     "prefix": "cardsort.err",
+    "scope": "xml",
     "body": [
       "<res label=\"sys_check-error-atLeast-sing-row\">답변을 선택하세요.</res>",
       "<res label=\"sys_check-error-atMost-plur-row\">답변을 선택하세요.</res>",
@@ -4608,6 +4731,7 @@
 
   "CardsortHTML_Snippet": {
     "prefix": "cardsort.html",
+    "scope": "xml",
     "body": [
       "cardsort:buttonNextHTML=\"\\${res.cardsort_next}\"",
       "cardsort:buttonPreviousHTML=\"\\${res.cardsort_prev}\"",
@@ -4618,6 +4742,7 @@
 
   "CardsortRate_Snippet": {
     "prefix": "cardsort.rate",
+    "scope": "xml",
     "body": [
       "cardsort:animationDuration=\"200\"",
       "cardsort:displayCounter=\"0\"",
@@ -4632,6 +4757,7 @@
 
   "CardsortRes_Snippet": {
     "prefix": "cardsort.res",
+    "scope": "xml",
     "body": [
       "<res label=\"cardsort_next\">다음 &gt;&gt;</res>",
       "<res label=\"cardsort_prev\">&lt;&lt; 이전</res>",
@@ -4642,6 +4768,7 @@
 
   "DatePicker_Snippet": {
     "prefix": "datepicker",
+    "scope": "xml",
     "body": [
       "<text ",
       "  label=\"${1:[QID]}\"",
@@ -4660,6 +4787,7 @@
 
   "FlexAccordion_Snippet": {
     "prefix": "acco.flex",
+    "scope": "xml",
     "body": [
       ".sq-accordion-answers{",
       "  margin-left: 0px !important;",
@@ -4689,12 +4817,14 @@
 
   "OneRowAtaTime_Snippet": {
     "prefix": "onerow",
+    "scope": "xml",
     "body": ["uses=\"onerowatatime.3\""],
     "description": "DynamicQuestions/OneRowAtaTime"
   },
 
   "RateSlider_Snippet": {
     "prefix": "sliderpoint",
+    "scope": "xml",
     "body": [
       "<select ",
       "   label=\"${1:[QID]}\"",
@@ -4717,12 +4847,14 @@
 
   "SliderNumber_Snippet": {
     "prefix": "slidernumber",
+    "scope": "xml",
     "body": ["uses=\"slidernumber.5\""],
     "description": "DynamicQuestions/SliderNumber"
   },
 
   "Sum100_Snippet": {
     "prefix": "sum100",
+    "scope": "xml",
     "body": [
       "<number ",
       "    label=\"${1:[QID]}\"",
@@ -4753,12 +4885,14 @@
 
   "Tiled_Snippet": {
     "prefix": "tiled",
+    "scope": "xml",
     "body": ["uses=\"atm1d.11\"", "atm1d:viewMode=\"Tiled\""],
     "description": "DynamicQuestions/Tiled"
   },
 
   "TiledError_Snippet": {
     "prefix": "tiled.err",
+    "scope": "xml",
     "body": [
       "<res label=\"sys_check-error-atLeast-sing-column\">이 열에서 \\$(count)개 이상의 상자를 선택하십시오(\\$(actual)개 선택).</res>"
     ],
@@ -4767,6 +4901,7 @@
 
   "VideoCapture_Snippet": {
     "prefix": "videocapture",
+    "scope": "xml",
     "body": [
       "<textarea ",
       " label=\"${1:[QID]}\"",
@@ -4788,6 +4923,7 @@
 
   "VideoCaptureNoAnswer_Snippet": {
     "prefix": "videocapture.na",
+    "scope": "xml",
     "body": [
       "<textarea ",
       "  label=\"${1:[QID]}\"",
@@ -4807,6 +4943,7 @@
 
   "glbVerifyQuestion_Snippet": {
     "prefix": "glb.verify",
+    "scope": "xml",
     "body": [
       "<radio ",
       "  label=\"GLB_verify\"",
@@ -4853,6 +4990,7 @@
 
   "glbXML_Snippet": {
     "prefix": "glb.xml",
+    "scope": "xml",
     "body": [
       "<style label=\"glb_iframe\" arg:glbSrc=\"${1:[modelviewer.html URL]}\" arg:glbName=\"${2:[glb File name]}\" name=\"survey.question\"><![CDATA[",
       "<style>",
@@ -4880,6 +5018,7 @@
 
   "glbXMLCopy_Snippet": {
     "prefix": "glb.copy",
+    "scope": "xml",
     "body": [
       "<style arg:glbSrc=\"${1:\\${imgdr}/modelViewer.html}\" arg:glbName=\"$2\" copy=\"glb_iframe\" name=\"survey.question\"/>"
     ],
@@ -4888,30 +5027,35 @@
 
   "Br1_Snippet": {
     "prefix": "br",
+    "scope": "xml",
     "body": ["<br/>"],
     "description": "HTML/Br1"
   },
 
   "Br2_Snippet": {
     "prefix": "br2",
+    "scope": "xml",
     "body": ["<br/><br/>"],
     "description": "HTML/Br2"
   },
 
   "CommentBox_Snippet": {
     "prefix": "cb",
+    "scope": "xml",
     "body": ["<div class=\"comment-box\">$0</div>"],
     "description": "HTML/CommentBox"
   },
 
   "ImgTag_Snippet": {
     "prefix": "img",
+    "scope": "xml",
     "body": ["<img src=\"\\${imgdr}/$0.png\"/>"],
     "description": "HTML/ImgTag"
   },
 
   "AutoSumSliderJS_Snippet": {
     "prefix": "autosum",
+    "scope": "xml",
     "body": [
       "<number ",
       "    label=\"${1:[QID]}\"",
@@ -4933,6 +5077,7 @@
 
   "DisableCopyPasteOnInputs_Snippet": {
     "prefix": "dont.cv",
+    "scope": "xml",
     "body": [
       "// .dont-cv에 적용",
       "const disableCopyPasteOnInputs = () => {",
@@ -4980,6 +5125,7 @@
 
   "FloatDecimalKeyUp_Snippet": {
     "prefix": "float.js",
+    "scope": "xml",
     "body": [
       "<style name=\"question.after\" wrap=\"ready\"><![CDATA[",
       "document.querySelectorAll('.input-float').forEach(input => {",
@@ -4997,6 +5143,7 @@
 
   "ImagePopup_Snippet": {
     "prefix": "popup",
+    "scope": "xml",
     "body": [
       "document.addEventListener('DOMContentLoaded', (event) => {",
       "    const imgDiv = document.querySelector('.img-div');",
@@ -5014,12 +5161,14 @@
 
   "ImageZoomClass_Snippet": {
     "prefix": "zoom",
+    "scope": "xml",
     "body": ["${1:zoom pos_cursor pWidth_350 pHeight_350 redDot}"],
     "description": "JavaScriptLibrary/ImageZoomClass"
   },
 
   "ImageZoomHint_Snippet": {
     "prefix": "zoom.hint",
+    "scope": "xml",
     "body": [
       "# zoom",
       "default class ",
@@ -5052,6 +5201,7 @@
 
   "ImageZoomJS_Snippet": {
     "prefix": "zoom.js",
+    "scope": "xml",
     "body": [
       "<script>",
       "window.addEventListener(\"DOMContentLoaded\", function(){",
@@ -5064,6 +5214,7 @@
 
   "JavaScriptOnerowatatime_Snippet": {
     "prefix": "js.onerow",
+    "scope": "xml",
     "body": [
       "<style label=\"js_onerowatatime\" arg:completeWord=\"default\" arg:multiControl=\"true\" arg:nextControl=\"true\" arg:resultPosFix=\"true\" arg:resultView=\"true\" arg:scrollMove=\"true\" name=\"question.after\" wrap=\"ready\"><![CDATA[",
       "onerowatatime(\"\\${this.label}\", \\${len([eachRow.label for eachRow in \\$(this.label).rows if eachRow.displayed and not eachRow.disabled])}, \\${len([eachCol.label for eachCol in \\$(this.label).cols if eachCol.displayed and not eachCol.disabled])}, \\${len([eachRow.label for eachRow in \\$(this.label).rows if eachRow.any])}, \\$(resultView), \\$(scrollMove), \\$(nextControl), \\$(multiControl), \"\\$(completeWord)\", \\$(resultPosFix));",
@@ -5074,6 +5225,7 @@
 
   "JavaScriptOnerowatatimeCopy_Snippet": {
     "prefix": "js.onerow.copy",
+    "scope": "xml",
     "body": [
       "<style copy=\"js_onerowatatime\" arg:completeWord=\"default\" arg:multiControl=\"true\" arg:nextControl=\"true\" arg:resultPosFix=\"true\" arg:resultView=\"true\" arg:scrollMove=\"true\" name=\"question.after\" wrap=\"ready\"/>"
     ],
@@ -5082,6 +5234,7 @@
 
   "MonthHandler_Snippet": {
     "prefix": "month.handler",
+    "scope": "xml",
     "body": [
       "<style name=\"question.after\" wrap=\"ready\"><![CDATA[",
       "const monthHanler = (yearSelector, monthSeletor)=>{",
@@ -5133,6 +5286,7 @@
 
   "MutationObserver_Snippet": {
     "prefix": "observer",
+    "scope": "xml",
     "body": [
       "const ${1:[VAR_NAME]} = document.querySelector(\"${2:[SELECTOR]}\");",
       "",
@@ -5149,6 +5303,7 @@
 
   "OnlyNumberKeyUp_Snippet": {
     "prefix": "only.num.js",
+    "scope": "xml",
     "body": [
       "<style name=\"question.after\" wrap=\"ready\"><![CDATA[",
       "document.querySelectorAll('.only-number').forEach(input => {",
@@ -5172,6 +5327,7 @@
 
   "QuestionFocusExample_Snippet": {
     "prefix": "focus.ex",
+    "scope": "xml",
     "body": [
       "<style name=\"question.after\"><![CDATA[",
       "<style>",
@@ -5229,6 +5385,7 @@
 
   "SlideshowHTML_Snippet": {
     "prefix": "slideshow.html",
+    "scope": "xml",
     "body": [
       "<res label=\"slideshow_force_text\">모든 슬라이드를 확인해주세요.</res>",
       "",
@@ -5253,6 +5410,7 @@
 
   "SlideshowHTMLCopy_Snippet": {
     "prefix": "slideshow.html.copy",
+    "scope": "xml",
     "body": [
       "<style name=\"survey.question\" copy=\"slideshow_title\"/>",
       "<style name=\"question.after\" wrap=\"ready\" copy=\"slideshow_html\" arg:holdPageSec=\"0\"/>"
@@ -5262,6 +5420,7 @@
 
   "SlideshowImage_Snippet": {
     "prefix": "slideshow.image",
+    "scope": "xml",
     "body": [
       "<res label=\"slideshow_force_text\">모든 슬라이드를 확인해주세요.</res>",
       "",
@@ -5287,6 +5446,7 @@
 
   "SlideshowImageCopy_Snippet": {
     "prefix": "slideshow.image.copy",
+    "scope": "xml",
     "body": [
       "<style name=\"survey.question\" copy=\"slideshow_title\"/>",
       "<style name=\"question.after\" wrap=\"ready\" copy=\"slideshow_image\" arg:holdPageSec=\"0\"/>"
@@ -5296,12 +5456,14 @@
 
   "ThisOrThat_Snippet": {
     "prefix": "thisorthat",
+    "scope": "xml",
     "body": ["ss:rowClassNames=\"this-or-that ${1:base1}-this\"", "ss:rowClassNames=\"this-or-that ${1:base1}-that\""],
     "description": "JavaScriptLibrary/ThisOrThat"
   },
 
   "WidthOnly_Snippet": {
     "prefix": "width.only",
+    "scope": "xml",
     "body": [
       "<res label=\"mobile_only_width\">본 문항은 가로 모드로 설문에 응답해주세요</res>",
       "",
@@ -5386,6 +5548,7 @@
 
   "YearMonthRange_Snippet": {
     "prefix": "month.range",
+    "scope": "xml",
     "body": [
       "<style arg:minDate=\"${1:2000-01}\" arg:maxDate=\"${2:2099-12}\" arg:yearDescending=\"true\" label=\"year_month_range\" name=\"question.after\" wrap=\"ready\"><![CDATA[",
       "selectDateRange({",
@@ -5400,6 +5563,7 @@
 
   "YearMonthRangeCopy_Snippet": {
     "prefix": "month.range.copy",
+    "scope": "xml",
     "body": [
       "<style arg:minDate=\"${1:2000-01}\" arg:maxDate=\"${2:2099-12}\" arg:yearDescending=\"true\" copy=\"year_month_range\" name=\"question.after\" wrap=\"ready\"/>"
     ],
@@ -5408,6 +5572,7 @@
 
   "MaxDiffCSS_Snippet": {
     "prefix": "maxdiff.css",
+    "scope": "xml",
     "body": [
       ".maxdiff tr.maxdiff-header-legend {",
       "    background-color: transparent;",
@@ -5440,6 +5605,7 @@
 
   "MaxDiffExec_Snippet": {
     "prefix": "maxdiff.exec",
+    "scope": "xml",
     "body": [
       "def setupMaxDiffFile(fname, fileDelimiter=\"\t\"):",
       "    try:",
@@ -5464,6 +5630,7 @@
 
   "MaxDiffQuestion_Snippet": {
     "prefix": "maxdiff.question",
+    "scope": "xml",
     "body": [
       "<block label=\"${1:[QID]}_maxdiff_block\">",
       "    <quota label=\"${2:[QUOTA]}_label\" overquota=\"noqual\" sheet=\"${2:[QUOTA]}\"/>",
@@ -5605,6 +5772,7 @@
 
   "MaxDiffRes_Snippet": {
     "prefix": "maxdiff.res",
+    "scope": "xml",
     "body": [
       "<res label=\"${1:[QID]}_mditem1\">$0</res>",
       "<res label=\"${1:[QID]}_mditem2\"></res>",
@@ -5621,6 +5789,7 @@
 
   "OCEAN_Snippet": {
     "prefix": "ocean",
+    "scope": "xml",
     "body": [
       "<res label=\"ocean_left_legend\">왼쪽에 가깝다</res>",
       "<res label=\"ocean_right_legend\">오른쪽에 가깝다</res>",
@@ -5807,6 +5976,7 @@
 
   "OfflineScreenout_Snippet": {
     "prefix": "scr.off",
+    "scope": "xml",
     "body": [
       "<validate>",
       "scrErr(${1:[COND]})",
@@ -5827,12 +5997,14 @@
 
   "OfflineScreenoutError_Snippet": {
     "prefix": "off.err",
+    "scope": "xml",
     "body": ["def scrErr(cond) :", "  if cond :", "    error(res.chk_plz)"],
     "description": "Offline/OfflineScreenoutError"
   },
 
   "PasswordDef_Snippet": {
     "prefix": "password.def",
+    "scope": "xml",
     "body": [
       "<res label=\"invalid_password\">잘못된 패스워드입니다. 확인 부탁드립니다.</res>",
       "",
@@ -5845,6 +6017,7 @@
 
   "PasswordQuestion_Snippet": {
     "prefix": "password",
+    "scope": "xml",
     "body": [
       "<text",
       "  label=\"${1:[QID]}\"",
@@ -5876,6 +6049,7 @@
 
   "RespData_Snippet": {
     "prefix": "respdata",
+    "scope": "xml",
     "body": [
       "<text",
       "  label=\"RespData\"",
@@ -5952,6 +6126,7 @@
 
   "BadTextValidate_Snippet": {
     "prefix": "badtext",
+    "scope": "xml",
     "body": [
       "def badtext() :",
       "  text_answer = [unicode(i, 'utf-8').replace(\" \",\"\") for i in this.values if not i==None]",
@@ -5977,6 +6152,7 @@
 
   "CheckDuplicatesValidate_Snippet": {
     "prefix": "checkdupe",
+    "scope": "xml",
     "body": [
       "def checkDuplicates(Qid) :",
       "  # before Q",
@@ -6017,6 +6193,7 @@
 
   "CheckOpenValidate_Snippet": {
     "prefix": "checkopen",
+    "scope": "xml",
     "body": [
       "def checkOpen():",
       "  str_1=res.err2010",
@@ -6053,6 +6230,7 @@
 
   "Date_Snippet": {
     "prefix": "datetime",
+    "scope": "xml",
     "body": [
       "import datetime",
       "now = datetime.datetime.now()",
@@ -6069,6 +6247,7 @@
 
   "DatFileToDict_Snippet": {
     "prefix": "dat.dict",
+    "scope": "xml",
     "body": [
       "def dat_to_dict(file_name, unique_col_name) :",
       "  try :",
@@ -6107,6 +6286,7 @@
 
   "DatFileToList_Snippet": {
     "prefix": "dat.list",
+    "scope": "xml",
     "body": [
       "def dat_to_list(file_name) :",
       "  try :",
@@ -6124,6 +6304,7 @@
 
   "DisabledControl_Snippet": {
     "prefix": "disabled.control",
+    "scope": "xml",
     "body": [
       "def reset_disabled(question) :",
       "  for each in question.rows :",
@@ -6142,6 +6323,7 @@
 
   "DontAnswerNumber_Snippet": {
     "prefix": "dont.num",
+    "scope": "xml",
     "body": [
       "def number_answer_error() :",
       "  for each in this.rows :",
@@ -6153,12 +6335,14 @@
 
   "GetQuota_Snippet": {
     "prefix": "get.quota",
+    "scope": "xml",
     "body": ["quotas = gv.survey.root.quota.getQuotaCells()"],
     "description": "PythonLibrary/GetQuota"
   },
 
   "GetUuidLoadRecord_Snippet": {
     "prefix": "get.uuid",
+    "scope": "xml",
     "body": [
       "<text ",
       "  label=\"RawID\"",
@@ -6191,6 +6375,7 @@
 
   "GetVerify_Snippet": {
     "prefix": "get.verify",
+    "scope": "xml",
     "body": [
       "# example",
       "# minv, masv = get_verify(Q1)",
@@ -6209,6 +6394,7 @@
 
   "GroupRowsDef_Snippet": {
     "prefix": "group.rows",
+    "scope": "xml",
     "body": [
       "def group_rows(question, grouped_rows):",
       "    first_item_index = None",
@@ -6234,6 +6420,7 @@
 
   "HangleLengthDef_Snippet": {
     "prefix": "oe.len",
+    "scope": "xml",
     "body": [
       "def oe_length(num) :",
       "  txt = str(this.unsafe_val).replace(' ', '')",
@@ -6248,6 +6435,7 @@
 
   "HtmlListTagSettingDefine_Snippet": {
     "prefix": "html.list",
+    "scope": "xml",
     "body": [
       "<exec when=\"init\">",
       "def set_ol(li_list=[], ol_type=1):",
@@ -6284,18 +6472,21 @@
 
   "IsAll_Snippet": {
     "prefix": "isall",
+    "scope": "xml",
     "body": ["isall(${1:[QID]}, [$0])"],
     "description": "PythonLibrary/IsAll"
   },
 
   "IsIn_Snippet": {
     "prefix": "isin",
+    "scope": "xml",
     "body": ["isin(${1:[QID]}, [$0])"],
     "description": "PythonLibrary/IsIn"
   },
 
   "IsIn_IsAll_Snippet": {
     "prefix": "is",
+    "scope": "xml",
     "body": [
       "def isin(qid, codes, base_label='r') :",
       "  return any(getattr(qid, '%s%d'%(base_label, x)) for x in codes)",
@@ -6308,18 +6499,21 @@
 
   "LoadRecord_Snippet": {
     "prefix": "rec",
+    "scope": "xml",
     "body": ["rec = loadRecord(\"selfserve/548/${1:[PID]}\", \"${2:[KEY]}\", ${2:[KEY]})", "if rec:", "  $0"],
     "description": "PythonLibrary/LoadRecord"
   },
 
   "NumberComma_Snippet": {
     "prefix": "comma",
+    "scope": "xml",
     "body": ["'{:,}'.format(${1:[NUM]})"],
     "description": "PythonLibrary/NumberComma"
   },
 
   "QuotaControl_Snippet": {
     "prefix": "quota.control",
+    "scope": "xml",
     "body": [
       "def quota_control(quota_sheet, unfied_define_label=\"R\", defines=[]) :",
       "    # exmaple",
@@ -6416,6 +6610,7 @@
 
   "RankAbleAnswerCount_Snippet": {
     "prefix": "rank.cnt",
+    "scope": "xml",
     "body": [
       "def rankCnt(this_qid) :",
       "  show_cols = [eachCol for eachCol in this_qid.cols if eachCol.displayed]",
@@ -6426,6 +6621,7 @@
 
   "RowImageSetting_Snippet": {
     "prefix": "row.img",
+    "scope": "xml",
     "body": [
       ".card-img {",
       "  display: flex;",
@@ -6483,6 +6679,7 @@
 
   "SameGridCountHandler_Snippet": {
     "prefix": "samegrid.cnt",
+    "scope": "xml",
     "body": [
       "<res label=\"same_cnt_err\">동일한 응답을 %d개 연속으로 응답할 수 없습니다.</res>",
       "",
@@ -6509,6 +6706,7 @@
 
   "SameGridValidate_Snippet": {
     "prefix": "samegrid",
+    "scope": "xml",
     "body": [
       "def samegrid():",
       "  qid = allQuestions[this.label]",
@@ -6526,6 +6724,7 @@
 
   "SoftErrorValidate_Snippet": {
     "prefix": "soft.err",
+    "scope": "xml",
     "body": [
       "def soft_Err(cond, str, high_rows=[], high_cols=[]):",
       "  if cond :",
@@ -6550,6 +6749,7 @@
 
   "TypingTool_Snippet": {
     "prefix": "typing.tool",
+    "scope": "xml",
     "body": [
       "<exec when=\"init\">",
       "def algorithmSetup(fname, fDelimiter=\"\t\"):",
@@ -6630,6 +6830,7 @@
 
   "Rank2_Snippet": {
     "prefix": "rk2",
+    "scope": "xml",
     "body": [
       "<radio ",
       "  label=\"${1:[QID]}\"",
@@ -6637,13 +6838,13 @@
       "  shuffle=\"rows\"",
       "  unique=\"1\"",
       "  ss:questionClassNames=\"niq-rk-question sp-custom-btn\">",
-      "  <alt>${2:${1:QID}:RANK 2</alt>}",
-      "  <title><div class=\"q-name\">${1:[QID]}</div> ${3:TITLE]}</title>",
+      "  <alt>${2}</alt>",
+      "  <title><div class=\"q-name\">${1:[QID]}</div> ${3:[TITLE]}</title>",
       "  <style copy=\"custom_rank\" arg:autoClick=\"true\" arg:autoContinue=\"false\" arg:colCnt=\"${4:1}\" arg:ableNone=\"${5:1}\" arg:noneLabel=\"${6:null}\" arg:showAnswers=\"true\" arg:ableSort=\"true\" arg:showGroups=\"false\" arg:toggle=\"false\" arg:showCnt=\"true\" name=\"question.after\"/>",
       "  <col label=\"c1\">1순위</col>",
       "  <col label=\"c2\">2순위</col>",
       "  $0",
-      "  ${6:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
+      "  ${7:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
       "</radio>",
       "",
       "<suspend/>"
@@ -6653,6 +6854,7 @@
 
   "Rank3_Snippet": {
     "prefix": "rk3",
+    "scope": "xml",
     "body": [
       "<radio ",
       "  label=\"${1:[QID]}\"",
@@ -6660,14 +6862,14 @@
       "  shuffle=\"rows\"",
       "  unique=\"1\"",
       "  ss:questionClassNames=\"niq-rk-question sp-custom-btn\">",
-      "  <alt>${2:${1:QID}:RANK 3</alt>}",
+      "  <alt>${2}</alt>",
       "  <title><div class=\"q-name\">${1:[QID]}</div> ${3:[TITLE]}</title>",
       "  <style copy=\"custom_rank\" arg:autoClick=\"true\" arg:autoContinue=\"false\" arg:colCnt=\"${4:1}\" arg:ableNone=\"${5:1}\" arg:noneLabel=\"${6:null}\" arg:showAnswers=\"true\" arg:ableSort=\"true\" arg:showGroups=\"false\" arg:toggle=\"false\" arg:showCnt=\"true\" name=\"question.after\"/>",
       "  <col label=\"c1\">1순위</col>",
       "  <col label=\"c2\">2순위</col>",
       "  <col label=\"c3\">3순위</col>",
       "  $0",
-      "  ${6:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
+      "  ${7:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
       "</radio>",
       "",
       "<suspend/>"
@@ -6677,6 +6879,7 @@
 
   "Rank4_Snippet": {
     "prefix": "rk4",
+    "scope": "xml",
     "body": [
       "<radio ",
       "  label=\"${1:[QID]}\"",
@@ -6684,7 +6887,7 @@
       "  shuffle=\"rows\"",
       "  unique=\"1\"",
       "  ss:questionClassNames=\"niq-rk-question sp-custom-btn\">",
-      "  <alt>${2:${1:QID}:RANK 4</alt>}",
+      "  <alt>${2}</alt>",
       "  <title><div class=\"q-name\">${1:[QID]}</div> ${3:[TITLE]}</title>",
       "  <style copy=\"custom_rank\" arg:autoClick=\"true\" arg:autoContinue=\"false\" arg:colCnt=\"${4:1}\" arg:ableNone=\"${5:1}\" arg:noneLabel=\"${6:null}\" arg:showAnswers=\"true\" arg:ableSort=\"true\" arg:showGroups=\"false\" arg:toggle=\"false\" arg:showCnt=\"true\" name=\"question.after\"/>",
       "  <col label=\"c1\">1순위</col>",
@@ -6692,7 +6895,7 @@
       "  <col label=\"c3\">3순위</col>",
       "  <col label=\"c4\">4순위</col>",
       "  $0",
-      "  ${6:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
+      "  ${7:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
       "</radio>",
       "",
       "<suspend/>"
@@ -6702,6 +6905,7 @@
 
   "Rank5_Snippet": {
     "prefix": "rk5",
+    "scope": "xml",
     "body": [
       "<radio ",
       "  label=\"${1:[QID]}\"",
@@ -6709,7 +6913,7 @@
       "  shuffle=\"rows\"",
       "  unique=\"1\"",
       "  ss:questionClassNames=\"niq-rk-question sp-custom-btn\">",
-      "  <alt>${2:${1:QID}:RANK 5</alt>}",
+      "  <alt>${2}</alt>",
       "  <title><div class=\"q-name\">${1:[QID]}</div> ${3:[TITLE]}</title>",
       "  <style copy=\"custom_rank\" arg:autoClick=\"true\" arg:autoContinue=\"false\" arg:colCnt=\"${4:1}\" arg:ableNone=\"${5:1}\" arg:noneLabel=\"${6:null}\" arg:showAnswers=\"true\" arg:ableSort=\"true\" arg:showGroups=\"false\" arg:toggle=\"false\" arg:showCnt=\"true\" name=\"question.after\"/>",
       "  <col label=\"c1\">1순위</col>",
@@ -6718,7 +6922,7 @@
       "  <col label=\"c4\">4순위</col>",
       "  <col label=\"c5\">5순위</col>",
       "  $0",
-      "  ${6:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
+      "  ${7:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
       "</radio>",
       "",
       "<suspend/>"
@@ -6728,6 +6932,7 @@
 
   "RankExclusiveCheck_Snippet": {
     "prefix": "rk.chk",
+    "scope": "xml",
     "body": [
       "def rank_exclusive_chk(okUnique=[]) :",
       "  if okUnique :",
@@ -6744,12 +6949,14 @@
 
   "RankNone_Snippet": {
     "prefix": "rk.none",
+    "scope": "xml",
     "body": ["<row label=\"r$0\" randomize=\"0\" value=\"$0\" okUnique=\"1\">없음</row>"],
     "description": "RankQuestion/RankNone"
   },
 
   "RankNoneHandler_Snippet": {
     "prefix": "rank.none.handler",
+    "scope": "xml",
     "body": [
       "<res label=\"rank_none_err\">You can't respond with None.</res>",
       "",
@@ -6770,6 +6977,7 @@
 
   "RateBaseRank_Snippet": {
     "prefix": "rate.rank",
+    "scope": "xml",
     "body": [
       "<define label=\"${1:[DEFINE_LIST]}\">",
       "$0",
@@ -6872,6 +7080,7 @@
 
   "RateBaseRankSetting_Snippet": {
     "prefix": "rate.rank.def",
+    "scope": "xml",
     "body": [
       "<res label=\"rate_show_score_text\"><b>(%s점)</b> %s</res>",
       "<res label=\"rank_order_err\">점수가 높은 순서로 응답 부탁드립니다.</res>",
@@ -7065,6 +7274,7 @@
 
   "RateBaseReverseRank_Snippet": {
     "prefix": "rate.rank.rv",
+    "scope": "xml",
     "body": [
       "<define label=\"${1:[DEFINE_LIST]}\">",
       "$0",
@@ -7167,6 +7377,7 @@
 
   "RateBaseSA_Snippet": {
     "prefix": "rate.sa",
+    "scope": "xml",
     "body": [
       "<define label=\"${1:[DEFINE_LIST]}\">",
       "$0",
@@ -7217,6 +7428,7 @@
 
   "Cint_Snippet": {
     "prefix": "cint",
+    "scope": "xml",
     "body": [
       "<samplesource list=\"14\">",
       "  <title>Cint</title>",
@@ -7236,6 +7448,7 @@
 
   "Dataspring_Snippet": {
     "prefix": "dataspring",
+    "scope": "xml",
     "body": [
       "<samplesource list=\"13\">",
       "  <title>DataSpring</title>",
@@ -7266,6 +7479,7 @@
 
   "Dynata_Snippet": {
     "prefix": "dynata",
+    "scope": "xml",
     "body": [
       "<samplesource keyring=\"sys/dynata\" list=\"105\" sign=\"out,in\">",
       "  <title>Dynata</title>",
@@ -7284,6 +7498,7 @@
 
   "MarketLink_Snippet": {
     "prefix": "marketlink",
+    "scope": "xml",
     "body": [
       "<samplesource list=\"12\">",
       "    <title>MarketLink</title>",
@@ -7304,6 +7519,7 @@
 
   "Openlink_Snippet": {
     "prefix": "openlink",
+    "scope": "xml",
     "body": [
       "<samplesource list=\"0\">",
       "  <title>Open Survey</title>",
@@ -7323,6 +7539,7 @@
 
   "Tillion_Snippet": {
     "prefix": "tillion",
+    "scope": "xml",
     "body": [
       "<samplesource list=\"11\">",
       "  <title>Tillion</title>",
@@ -7341,6 +7558,7 @@
 
   "Toluna_Snippet": {
     "prefix": "toluna",
+    "scope": "xml",
     "body": [
       "<samplesource list=\"2\">",
       "  <title>Toluna</title>",
@@ -7372,6 +7590,7 @@
 
   "Uidlink_Snippet": {
     "prefix": "uid.link",
+    "scope": "xml",
     "body": [
       "<samplesource list=\"9\">",
       "  <title>UserIdSampleSource</title>",
@@ -7389,6 +7608,7 @@
 
   "StepByStepQuestion_Snippet": {
     "prefix": "sbs",
+    "scope": "xml",
     "body": [
       "<block label=\"${1:[BLOCK_NAME]}\">",
       "    <select ",
@@ -7432,6 +7652,7 @@
 
   "StepByStepQuestionNone_Snippet": {
     "prefix": "sbs.none",
+    "scope": "xml",
     "body": [
       "<style name=\"question.left\" label=\"sbs_none\"><![CDATA[",
       "\\@if this.styles.ss.legendColWidth",
@@ -7464,6 +7685,7 @@
 
   "StepByStepQuestionNoneCopy_Snippet": {
     "prefix": "sbs.none.copy",
+    "scope": "xml",
     "body": [
       "${3:<style name=\"question.left\" copy=\"sbs_none\"/>}",
       "",
@@ -7479,6 +7701,7 @@
 
   "StepByStepQuestionOpen_Snippet": {
     "prefix": "sbs.oe",
+    "scope": "xml",
     "body": [
       "<style name=\"el.select.footer\" arg:baseName=\"${1:[QID]}\" label=\"sbs_select_footer\"><![CDATA[",
       "</select>",
@@ -7503,6 +7726,7 @@
 
   "StepByStepQuestionOpenCopy_Snippet": {
     "prefix": "sbs.oe.copy",
+    "scope": "xml",
     "body": [
       "${2:<style name=\"el.select.footer\" arg:baseName=\"${1:[QID]}\" copy=\"sbs_select_footer\"/>}",
       "",
@@ -7519,6 +7743,7 @@
 
   "StepByStepQuestionValidation_Snippet": {
     "prefix": "sbs.vali.def",
+    "scope": "xml",
     "body": [
       "def sbs_validation(qid_list, none_qid=None) :",
       "  # None validation",
@@ -7536,12 +7761,14 @@
 
   "StepByStepQuestionValidationSet_Snippet": {
     "prefix": "sbs.vali",
+    "scope": "xml",
     "body": ["sbs_validation([${1:[QID]}x1, ${1:[QID]}x2, ${1:[QID]}x3], ${1:[QID]}none)"],
     "description": "StepByStep/StepByStepQuestionValidationSet"
   },
 
   "HeatClickVirtualAutoDef_Snippet": {
     "prefix": "heatmap.auto.def",
+    "scope": "xml",
     "body": [
       "<exec when=\"virtualInit\">",
       "def set_virtual_pos(qid, rating, auto_id) :",
@@ -7569,6 +7796,7 @@
 
   "HeatClickVirtualAutoQuestions_Snippet": {
     "prefix": "heatmap.auto.qus",
+    "scope": "xml",
     "body": [
       "<float ",
       "  label=\"${1:[AUTO_QID]}_pos\"",
@@ -7605,6 +7833,7 @@
 
   "ElementCheckbox_Snippet": {
     "prefix": "el.checkbox",
+    "scope": "xml",
     "body": [
       "<style name='el.checkbox'> <![CDATA[",
       "<input type=\"checkbox\" name=\"\\$(name)\" id=\"\\$(id)\" value=\"1\" \\$(checked) class=\"\\${flags.CSS} input checkbox\" \\$(extra)/>",
@@ -7615,6 +7844,7 @@
 
   "ElementImage_Snippet": {
     "prefix": "el.image",
+    "scope": "xml",
     "body": [
       "<style name='el.image'> <![CDATA[",
       "\\@if data",
@@ -7632,6 +7862,7 @@
 
   "ElementNoanswer_Snippet": {
     "prefix": "el.noanswer",
+    "scope": "xml",
     "body": [
       "<style name='el.noanswer'> <![CDATA[",
       "\\@if ec.simpleList",
@@ -7650,6 +7881,7 @@
 
   "ElementOpen_Snippet": {
     "prefix": "el.open",
+    "scope": "xml",
     "body": [
       "<style name='el.open'> <![CDATA[",
       "<input type=\"text\" name=\"\\$(name)\" id=\"\\$(name)\" value=\"\\$(value)\" data-cell=\"\\$(cell.parent.label)_\\$(cell.label)\" size=\"\\$(size)\" class=\"input text-input oe oe-\\$(align)\" \\$(extra)/>",
@@ -7661,6 +7893,7 @@
 
   "ElementRadio_Snippet": {
     "prefix": "el.radio",
+    "scope": "xml",
     "body": [
       "<style name='el.radio'> <![CDATA[",
       "<input type=\"radio\" name=\"\\$(name)\" value=\"\\$(value)\" id=\\$(id) \\$(checked) class=\"input radio\" \\$(extra)/>",
@@ -7671,6 +7904,7 @@
 
   "ElementSelect_Snippet": {
     "prefix": "el.select",
+    "scope": "xml",
     "body": [
       "<style name='el.select.header'> <![CDATA[",
       "<select name=\"\\$(name)\" id=\"\\$(id)\" class=\"input dropdown\" \\$(extra)>",
@@ -7693,6 +7927,7 @@
 
   "ElementText_Snippet": {
     "prefix": "el.text",
+    "scope": "xml",
     "body": [
       "<style name='el.text'> <![CDATA[",
       "\\@if row.styles.ss.preText or this.styles.ss.preText",
@@ -7717,6 +7952,7 @@
 
   "ElementTextarea_Snippet": {
     "prefix": "el.textarea",
+    "scope": "xml",
     "body": [
       "<style name='el.textarea'> <![CDATA[",
       "\\@if row.styles.ss.preText or this.styles.ss.preText",
@@ -7733,18 +7969,21 @@
 
   "GlobalPageHead_Snippet": {
     "prefix": "global.page.head",
+    "scope": "xml",
     "body": ["<style name=\"global.page.head\"> <![CDATA[", "", "]]></style>"],
     "description": "XmlStyleSystem/GlobalPageHead"
   },
 
   "PageHeadStyle_Snippet": {
     "prefix": "page.head",
+    "scope": "xml",
     "body": ["<style name=\"page.head\"><![CDATA[", "<style>", "${0}", "</style>", "]]></style>"],
     "description": "XmlStyleSystem/PageHeadStyle"
   },
 
   "Progressbar_Snippet": {
     "prefix": "progressbar",
+    "scope": "xml",
     "body": [
       "<style name='survey.completion'> <![CDATA[",
       "\\@if not gv.survey.root.styles.ss.hideProgressBar",
@@ -7761,12 +8000,14 @@
 
   "QuestionAfterStyleTag_Snippet": {
     "prefix": "question.after",
+    "scope": "xml",
     "body": ["<style name=\"question.after\" wrap=\"ready\"><![CDATA[", "${0}", "]]></style>"],
     "description": "XmlStyleSystem/QuestionAfterStyleTag"
   },
 
   "QuestionAnswersEnd_Snippet": {
     "prefix": "question.answer.end",
+    "scope": "xml",
     "body": [
       "<style name='survey.question.answers.end'> <![CDATA[",
       "\\@if not ec.simpleList",
@@ -7784,6 +8025,7 @@
 
   "QuestionAnswerStart_Snippet": {
     "prefix": "question.answer.start",
+    "scope": "xml",
     "body": [
       "<style name='survey.question.answers.start'> <![CDATA[",
       "<div class=\"answers \\$(answerClassNames)\">",
@@ -7804,6 +8046,7 @@
 
   "QuestionBottomLegend_Snippet": {
     "prefix": "question.bot.legend",
+    "scope": "xml",
     "body": [
       "<style name='question.bottom-legend'> <![CDATA[",
       "\\@if ec.simpleList",
@@ -7830,6 +8073,7 @@
 
   "QuestionBottomLegendItem_Snippet": {
     "prefix": "question.bot.legend.item",
+    "scope": "xml",
     "body": [
       "<style name='question.bottom-legend-item'> <![CDATA[",
       "\\@if ec.simpleList",
@@ -7854,6 +8098,7 @@
 
   "QuestionColLegendRow_Snippet": {
     "prefix": "question.col.legend.row",
+    "scope": "xml",
     "body": [
       "<style name='question.col-legend-row'> <![CDATA[",
       "\\@if ec.simpleList",
@@ -7876,6 +8121,7 @@
 
   "QuestionColLegendRowItem_Snippet": {
     "prefix": "question.col.legend.row.item",
+    "scope": "xml",
     "body": [
       "<style name='question.col-legend-row-item'> <![CDATA[",
       "\\@if ec.simpleList",
@@ -7900,6 +8146,7 @@
 
   "QuestionComment_Snippet": {
     "prefix": "question.comment",
+    "scope": "xml",
     "body": [
       "<style name='survey.question.instructions'> <![CDATA[",
       "<h2 title=\"@(instructions)\" class=\"instruction-text\">\\$(comment)</h2>",
@@ -7911,6 +8158,7 @@
 
   "QuestionElement_Snippet": {
     "prefix": "question.element",
+    "scope": "xml",
     "body": [
       "<style name='question.element'> <![CDATA[",
       "\\@if ec.simpleList",
@@ -7933,6 +8181,7 @@
 
   "QuestionFooter_Snippet": {
     "prefix": "question.footer",
+    "scope": "xml",
     "body": [
       "<style name='question.footer'> <![CDATA[",
       "\\${v2_insertStyle('survey.question.answers.end')}",
@@ -7944,6 +8193,7 @@
 
   "QuestionGroup1_Snippet": {
     "prefix": "question.group.1",
+    "scope": "xml",
     "body": [
       "<style name='question.group'> <![CDATA[",
       "<\\$(tagRow) class=\"row row-group row-group-1 rowGroup group1\">",
@@ -7958,6 +8208,7 @@
 
   "QuestionGroup2_Snippet": {
     "prefix": "question.group.2",
+    "scope": "xml",
     "body": [
       "<style name='question.group-2'> <![CDATA[",
       "<\\$(tagRow) class=\"row row-group row-group-2 rowGroup group2\">",
@@ -7972,6 +8223,7 @@
 
   "QuestionGroup3_Snippet": {
     "prefix": "question.group.3",
+    "scope": "xml",
     "body": [
       "<style name='question.group-3'> <![CDATA[",
       "<\\$(tagRow) class=\"row row-group row-group-3 rowGroup group3\">",
@@ -7986,6 +8238,7 @@
 
   "QuestionGroupColumn_Snippet": {
     "prefix": "question.group.col",
+    "scope": "xml",
     "body": [
       "<style name='question.group-column'> <![CDATA[",
       "<\\$(tag) class=\"row row-col-legends row-col-legends-top colGroup\">",
@@ -8000,6 +8253,7 @@
 
   "QuestionGroupColumnCell_Snippet": {
     "prefix": "question.group.col.cell",
+    "scope": "xml",
     "body": [
       "<style name='question.group-column-cell'> <![CDATA[",
       "<\\$(tag) scope=\"colgroup\" colspan=\"\\$(span)\" id=\"\\$(this.label)_\\$(group.label)\" class=\"cell nonempty legend col-legend col-legend-top col-legend-group \\$(levels) \\${\"desktop\" if this.grouping.cols else \"mobile\"} \\${\"col-legend-space\" if this.grouping.cols and ec.haveLeftLegend and ec.haveRightLegend else \"border-collapse\"} \\$(group.styles.ss.groupClassNames)\">",
@@ -8012,6 +8266,7 @@
 
   "QuestionHeader_Snippet": {
     "prefix": "question.start",
+    "scope": "xml",
     "body": [
       "<style name='question.header'> <![CDATA[",
       "<div id=\"question_\\${this.label}\" class=\"question \\${'disabledElement ' if why and gv.debug.qa else ''}\\${this.getName().lower()} label_\\${this.label} \\$(this.styles.ss.questionClassNames) \\$(hasError)\"\\${' role=\"radiogroup\" aria-labelledby=\"' + (this.label + '_' + ec.enabledCols[0].label if ec.haveColLegend else 'question_text_' + this.label) + '\"' if ec.simpleList else ''}>",
@@ -8026,6 +8281,7 @@
 
   "QuestionLeft_Snippet": {
     "prefix": "question.left",
+    "scope": "xml",
     "body": [
       "<style name='question.left'> <![CDATA[",
       "\\@if this.styles.ss.legendColWidth",
@@ -8044,6 +8300,7 @@
 
   "QuestionLeftBlank_Snippet": {
     "prefix": "question.left.blank",
+    "scope": "xml",
     "body": [
       "<style name='question.left-blank-legend'> <![CDATA[",
       "<\\$(tag) class=\"cell empty empty-left empty-\\$(pos) unused \\${\"desktop\" if this.grouping.cols else \"mobile\"} border-collapse\"></\\$(tag)>",
@@ -8054,6 +8311,7 @@
 
   "QuestionNaRow_Snippet": {
     "prefix": "question.na.row",
+    "scope": "xml",
     "body": [
       "<style name='question.na.row'> <![CDATA[",
       "\\@if ec.simpleList",
@@ -8074,6 +8332,7 @@
 
   "QuestionRight_Snippet": {
     "prefix": "question.right",
+    "scope": "xml",
     "body": [
       "<style name='question.right'> <![CDATA[",
       "\\@if this.styles.ss.legendColWidth",
@@ -8092,6 +8351,7 @@
 
   "QuestionRightBlank_Snippet": {
     "prefix": "question.right.blank",
+    "scope": "xml",
     "body": [
       "<style name='question.right-blank-legend'> <![CDATA[",
       "<\\$(tag) class=\"cell empty empty-right empty-\\$(pos) unused \\${\"desktop\" if this.grouping.cols else \"mobile\"} border-collapse\"></\\$(tag)>",
@@ -8102,6 +8362,7 @@
 
   "QuestionRow_Snippet": {
     "prefix": "question.row",
+    "scope": "xml",
     "body": [
       "<style name='question.row'> <![CDATA[",
       "\\@if ec.simpleList",
@@ -8124,6 +8385,7 @@
 
   "QuestionTitle_Snippet": {
     "prefix": "question.title",
+    "scope": "xml",
     "body": [
       "<style name='survey.question'> <![CDATA[",
       "<h1 title=\"@(question)\" class=\"question-text\" id=\"question_text_\\${this.label}\">\\${this.styles.html.showNumber and (str(number) + '. ') or ''}\\$(title)</h1>",
@@ -8135,6 +8397,7 @@
 
   "QuestionTopLegend_Snippet": {
     "prefix": "question.top.legend",
+    "scope": "xml",
     "body": [
       "<style name='question.top-legend'> <![CDATA[",
       "\\@if ec.simpleList",
@@ -8161,6 +8424,7 @@
 
   "QuestionTopLegendItem_Snippet": {
     "prefix": "question.top.legend.item",
+    "scope": "xml",
     "body": [
       "<style name='question.top-legend-item'> <![CDATA[",
       "\\@if ec.simpleList",
@@ -8185,6 +8449,7 @@
 
   "RespviewClientCSS_Snippet": {
     "prefix": "resp.client.css",
+    "scope": "xml",
     "body": [
       "<style name=\"respview.client.css\"> <![CDATA[",
       "<link rel=\"shortcut icon\" href=\"/survey/selfserve/NIQ_Favicon.ico\" type=\"image/x-icon\">",
@@ -8195,6 +8460,7 @@
 
   "RespviewClientJS_Snippet": {
     "prefix": "resp.client.js",
+    "scope": "xml",
     "body": [
       "<style name=\"respview.client.js\"> <![CDATA[",
       "<script type=\"text/javascript\" src=\"/survey/lib/local/nielsenisq/v10/timeme.min.js\"></script>",
@@ -8206,12 +8472,14 @@
 
   "RespviewClientMeta_Snippet": {
     "prefix": "resp.client.meta",
+    "scope": "xml",
     "body": ["<style name=\"respview.client.meta\"> <![CDATA[", "", "]]></style>"],
     "description": "XmlStyleSystem/RespviewClientMeta"
   },
 
   "SurveyHeader_Snippet": {
     "prefix": "survey.head",
+    "scope": "xml",
     "body": [
       "<style name='survey.header'> <![CDATA[",
       "<div class=\"page-header\"></div>",
@@ -8223,6 +8491,7 @@
 
   "SurveyLogo_Snippet": {
     "prefix": "survey.logo",
+    "scope": "xml",
     "body": [
       "<style name='survey.logo'> <![CDATA[",
       "\\@if gv.inSurvey() and gv.survey.root.styles.ss.logoFile",
@@ -8238,6 +8507,7 @@
 
   "SurveyRespviewFooter_Snippet": {
     "prefix": "survey.footer",
+    "scope": "xml",
     "body": [
       "<style name='survey.respview.footer'> <![CDATA[",
       "<div class=\"footer\">\\${v2_insertStyle('survey.respview.footer.support')}</div>",
@@ -8249,6 +8519,7 @@
 
   "SurveyRespviewFooterSupport_Snippet": {
     "prefix": "survey.footer.support",
+    "scope": "xml",
     "body": [
       "<style cond=\"1\" name=\"survey.respview.footer.support\"><![CDATA[",
       "Copyright Ⓒ \\${time.strftime('%Y')} <span class=\"blue-n\" jstcache=\"0\"></span>NielsenIQ Consumer LLC. All Rights Reserved. <a href=\"@(PrivacyPolicyUrl)\" target=\"_blank\" rel=\"noopener\" jstcache=\"0\">@(PrivacyPolicy)</a>.&nbsp;|&nbsp;<a href=\"mailto: NielsenIQDecipherSupport@nielseniq.com;NielsenDecipherSupport@nielseniq.com\" target=\"_blank\" jstcache=\"0\"><i class=\"fa fa-icon-envelope-o\" aria-hidden=\"true\" jstcache=\"0\"></i></a>",
@@ -8266,6 +8537,7 @@
 
   "XmlBack_Snippet": {
     "prefix": "xml.back.btn",
+    "scope": "xml",
     "body": [
       "<style name='button.goback'> <![CDATA[",
       "<input type=\"button\" id=\"btn_goback\" class=\"button back\" onClick=\"Survey.postControl('back2')\" value=\"&laquo; @(back)\" />",
@@ -8276,6 +8548,7 @@
 
   "XmlButtons_Snippet": {
     "prefix": "xml.btn",
+    "scope": "xml",
     "body": [
       "<style name='buttons'> <![CDATA[",
       "<div class=\"survey-buttons\">",
@@ -8290,12 +8563,14 @@
 
   "XmlCancel_Snippet": {
     "prefix": "xml.cancel",
+    "scope": "xml",
     "body": ["<style name=\"button.cancel\"> <![CDATA[", "", "]]></style>"],
     "description": "XmlStyleSystem/XmlCancel"
   },
 
   "XmlContinue_Snippet": {
     "prefix": "xml.next.btn",
+    "scope": "xml",
     "body": [
       "<style name='button.continue'> <![CDATA[",
       "<input type=\"submit\" name=\"continue\" id=\"btn_continue\" class=\"button continue\" value=\"@(continue) &raquo;\" onClick=\"var i = document.createElement('input');i.setAttribute('type', 'hidden');i.setAttribute('value', '1');i.setAttribute('name', '__has_javascript');document.forms.primary.appendChild(i);\"/>",
@@ -8306,6 +8581,7 @@
 
   "XmlFinish_Snippet": {
     "prefix": "xml.finish",
+    "scope": "xml",
     "body": [
       "<style name='button.finish'> <![CDATA[",
       "<input type=\"submit\" name=\"finish\" id=\"btn_finish\" class=\"button finish\" value=\"@(finish)\"  onClick=\"var i = document.createElement('input');i.setAttribute('type', 'hidden');i.setAttribute('value', '1');i.setAttribute('name', '__has_javascript');document.forms.primary.appendChild(i);\"/>",
@@ -8316,6 +8592,7 @@
 
   "ChAccordion_Snippet": {
     "prefix": "ch.acco",
+    "scope": "xml",
     "body": [
       "<style label=\"ch_accordion\" arg:accoOpen1=\"open\" name=\"question.header\"><![CDATA[",
       "<div class=\"ch-accordion\">",
@@ -8392,6 +8669,7 @@
 
   "ChAccordionCopy_Snippet": {
     "prefix": "ch.acco.copy",
+    "scope": "xml",
     "body": [
       "<style copy=\"ch_accordion\" arg:accoOpen1=\"open\" name=\"question.header\"/>",
       "<style copy=\"ch_accordion_js\" name=\"question.after\"/>"
@@ -8401,6 +8679,7 @@
 
   "CleanGroup_Snippet": {
     "prefix": "clean.group",
+    "scope": "xml",
     "body": [
       "<style label=\"clean_group\" name=\"question.group\"><![CDATA[",
       "<\\$(tagRow) class=\"row row-group row-group-1 rowGroup group1\">",
@@ -8422,6 +8701,7 @@
 
   "CleanGroupCopy_Snippet": {
     "prefix": "clean.group.copy",
+    "scope": "xml",
     "body": [
       "<style copy=\"clean_group\" name=\"question.group\"/>",
       "<style copy=\"clean_group_depth2\" name='question.group-2'/>"
@@ -8431,6 +8711,7 @@
 
   "CommentCallout_Snippet": {
     "prefix": "callout",
+    "scope": "xml",
     "body": [
       "<style name='survey.question.instructions' label=\"comment_callout\" arg:calloutHeader=\"${1:[TAB1]}\"><![CDATA[",
       "<h2 title=\"@(instructions)\" class=\"instruction-text\">",
@@ -8446,12 +8727,14 @@
 
   "CommentCalloutCopy_Snippet": {
     "prefix": "callout.copy",
+    "scope": "xml",
     "body": ["<style name='survey.question.instructions' copy=\"comment_callout\" arg:calloutHeader=\"${1:[TAB1]}\"/>"],
     "description": "XmlStyleSystemCustom/CommentCalloutCopy"
   },
 
   "Detail_Snippet": {
     "prefix": "detail",
+    "scope": "xml",
     "body": [
       "<style label=\"${1:[TAB1]}\" arg:detailsOpen=\"${2:open}\" arg:imgName=\"${3:[TAB3]}\" name=\"survey.question\"><![CDATA[",
       "<h1 title=\"@(question)\" class=\"question-text\" id=\"question_text_\\${this.label}\">",
@@ -8473,6 +8756,7 @@
 
   "DetailOpenClose_Snippet": {
     "prefix": "detail.oc",
+    "scope": "xml",
     "body": [
       "<res label=\"detail_open\">Open</res>",
       "<res label=\"detail_close\">Close</res>",
@@ -8514,6 +8798,7 @@
 
   "DetailRes_Snippet": {
     "prefix": "detail.res",
+    "scope": "xml",
     "body": [
       "<res label=\"detail_text\">보기 카드 <span style=\"font-size: 1.1rem; font-weight: normal;\">(클릭하면 보이거나 숨겨집니다)</span></res>"
     ],
@@ -8522,12 +8807,14 @@
 
   "DoNotShowGroup_Snippet": {
     "prefix": "no.group",
+    "scope": "xml",
     "body": ["<style name=\"question.group\"/>"],
     "description": "XmlStyleSystemCustom/DoNotShowGroup"
   },
 
   "DQQACodes_Snippet": {
     "prefix": "qacodes",
+    "scope": "xml",
     "body": [
       "<style name='survey.question.answers.start' mode=\"before\"> <![CDATA[",
       "\\@if gv.hasQA(True) and gv.showCms()",
@@ -8548,6 +8835,7 @@
 
   "ElementTextSelectCustom_Snippet": {
     "prefix": "el.text.select.xml",
+    "scope": "xml",
     "body": [
       "<style arg:optionItems=\"${1:range(2021, 2025)}\" name=\"el.text\"><![CDATA[",
       "\\@if row.styles.ss.preText or this.styles.ss.preText",
@@ -8573,12 +8861,14 @@
 
   "ElementTextSelectCustomCopy_Snippet": {
     "prefix": "el.text.select",
+    "scope": "xml",
     "body": ["<style copy=\"text_to_select\" arg:optionItems=\"${1:range(2021, 2025)}\" name=\"el.text\"/>"],
     "description": "XmlStyleSystemCustom/ElementTextSelectCustomCopy"
   },
 
   "FlexMode_Snippet": {
     "prefix": "flex.mode",
+    "scope": "xml",
     "body": [
       "<style name=\"question.left\"><![CDATA[",
       "  <div style=\"display: flex; margin-bottom: 10px; align-content: center; align-items: center;\">",
@@ -8601,6 +8891,7 @@
 
   "Hangle_Snippet": {
     "prefix": "han",
+    "scope": "xml",
     "body": [
       "<style name=\"page.head\" label=\"hangle_css\"><![CDATA[",
       "<style>",
@@ -8659,6 +8950,7 @@
 
   "HangleCopy_Snippet": {
     "prefix": "han.copy",
+    "scope": "xml",
     "body": [
       "<style name=\"page.head\" copy=\"hangle_css\"/>",
       "<style name=\"question.after\" wrap=\"ready\" arg:hanPostText=\"${1:[TAB1]}\" copy=\"hangleConverter\"/>",
@@ -8669,6 +8961,7 @@
 
   "HideElements_Snippet": {
     "prefix": "hide.el",
+    "scope": "xml",
     "body": [
       "<style label=\"hideElements\" name=\"question.element\"><![CDATA[",
       "\\@if ec.simpleList",
@@ -8702,6 +8995,7 @@
 
   "HideElementsCopy_Snippet": {
     "prefix": "hide.el.copy",
+    "scope": "xml",
     "body": [
       "<style copy=\"hideElements\" name=\"question.element\" rows=\"${1:[TAB1]}\" cols=\"${2:[TAB2]}\" cond=\"${3:[TAB3]}\"/>"
     ],
@@ -8710,6 +9004,7 @@
 
   "ImageUploadStyle_Snippet": {
     "prefix": "custom.image.upload",
+    "scope": "xml",
     "body": [
       "<checkbox ",
       "  label=\"${1:[QID]}_title\"",
@@ -8871,6 +9166,7 @@
 
   "NoElementsInput_Snippet": {
     "prefix": "no.el.ip",
+    "scope": "xml",
     "body": [
       "<style label=\"no_els_input\" arg:numberTitle=\"$0\" name=\"el.text\"><![CDATA[",
       "<div class=\"no-rows-input\">",
@@ -8892,6 +9188,7 @@
 
   "NoElementText_Snippet": {
     "prefix": "no.el.text",
+    "scope": "xml",
     "body": [
       "<style label=\"no_els_text\" arg:textTitle=\"$0\" name=\"el.text\"><![CDATA[",
       "<div class=\"no-rows-input\">",
@@ -8911,18 +9208,21 @@
 
   "NoElementTextCopy_Snippet": {
     "prefix": "no.el.text.copy",
+    "scope": "xml",
     "body": ["<style copy=\"no_els_text\" arg:textTitle=\"$0\" name=\"el.text\"/>"],
     "description": "XmlStyleSystemCustom/NoElementTextCopy"
   },
 
   "NoRowsInputCopy_Snippet": {
     "prefix": "no.el.ip.copy",
+    "scope": "xml",
     "body": ["<style copy=\"no_els_input\" arg:numberTitle=\"$0\" name=\"el.text\"/>"],
     "description": "XmlStyleSystemCustom/NoRowsInputCopy"
   },
 
   "NumberTotalCustom_Snippet": {
     "prefix": "custom.sum",
+    "scope": "xml",
     "body": [
       "<style name=\"page.head\" label=\"custom_sum_css\"><![CDATA[",
       "<style>",
@@ -8997,6 +9297,7 @@
 
   "NumberTotalCustomCopy_Snippet": {
     "prefix": "custom.sum.copy",
+    "scope": "xml",
     "body": [
       "<style name=\"page.head\" copy=\"custom_sum_css\"/>",
       "<style name=\"question.after\" copy=\"custom_sum_js\"/>",
@@ -9007,6 +9308,7 @@
 
   "ShowUID_Snippet": {
     "prefix": "show.uid",
+    "scope": "xml",
     "body": [
       "<style name=\"survey.completion\"><![CDATA[",
       "\\@if not gv.survey.root.styles.ss.hideProgressBar",
@@ -9023,6 +9325,7 @@
 
   "ShowUIDList_Snippet": {
     "prefix": "show.uid.list",
+    "scope": "xml",
     "body": [
       "<style name=\"survey.completion\"><![CDATA[",
       "<style>",
@@ -9091,6 +9394,7 @@
 
   "SimpleFlex_Snippet": {
     "prefix": "flex",
+    "scope": "xml",
     "body": [
       "<style name=\"question.element\"><![CDATA[",
       "<span class=\"hidden\">",
@@ -9105,6 +9409,7 @@
 
   "TextareaWithTitle_Snippet": {
     "prefix": "textarea.title",
+    "scope": "xml",
     "body": [
       "<style label=\"textarea_title\" arg:subTitle=\"$0\" name=\"el.textarea\"><![CDATA[",
       "\\@if row.styles.ss.preText or this.styles.ss.preText",
@@ -9124,12 +9429,14 @@
 
   "TextareaWithTitleCopy_Snippet": {
     "prefix": "textarea.title.copy",
+    "scope": "xml",
     "body": ["<style copy=\"textarea_title\" arg:subTitle=\"$0\" name=\"el.textarea\"/>"],
     "description": "XmlStyleSystemCustom/TextareaWithTitleCopy"
   },
 
   "ToggleGroup_Snippet": {
     "prefix": "tog.group",
+    "scope": "xml",
     "body": [
       "<style name='question.group' label=\"tog_group\"><![CDATA[",
       "<\\$(tagRow) class=\"row row-group row-group-1 rowGroup group1\">",
@@ -9166,6 +9473,7 @@
 
   "ToggleGroupColumnCSS_Snippet": {
     "prefix": "tog.group.cols",
+    "scope": "xml",
     "body": [
       "<style name=\"page.head\" label=\"tog_group_cols\" arg:colCount=\"2\"><![CDATA[",
       "<style>",
@@ -9194,12 +9502,14 @@
 
   "ToggleGroupColumnCSSCopy_Snippet": {
     "prefix": "tog.group.cols.copy",
+    "scope": "xml",
     "body": ["<style name=\"page.head\" copy=\"tog_group_cols\" arg:colCount=\"2\"/>"],
     "description": "XmlStyleSystemCustom/ToggleGroupColumnCSSCopy"
   },
 
   "ToggleGroupCopy_Snippet": {
     "prefix": "tog.group.copy",
+    "scope": "xml",
     "body": [
       "<style name='question.group' copy=\"tog_group\"/>",
       "<style name='question.element' copy=\"tog_element\"/>"
@@ -9209,6 +9519,7 @@
 
   "ToggleGroupJS_Snippet": {
     "prefix": "tog.group.js",
+    "scope": "xml",
     "body": [
       "<style name=\"question.after\"><![CDATA[",
       "<script>",
@@ -9225,6 +9536,7 @@
 
   "ToggleGroupLeftCSS_Snippet": {
     "prefix": "tog.group.left",
+    "scope": "xml",
     "body": [
       "<style label=\"tog_group_left\" name=\"page.head\"><![CDATA[",
       "<style>",
@@ -9290,12 +9602,14 @@
 
   "ToggleGroupLeftCSSCopy_Snippet": {
     "prefix": "tog.group.left.copy",
+    "scope": "xml",
     "body": ["<style copy=\"tog_group_left\" name=\"page.head\"/>"],
     "description": "XmlStyleSystemCustom/ToggleGroupLeftCSSCopy"
   },
 
   "ToggleGroupNone_Snippet": {
     "prefix": "tog.group.none",
+    "scope": "xml",
     "body": [
       ".none-group {",
       "  border: unset !important;",
@@ -9315,6 +9629,7 @@
 
   "TopText_Snippet": {
     "prefix": "top.text",
+    "scope": "xml",
     "body": [
       "<style name='survey.question' arg:showText=\"$0\" label=\"top_text\"> <![CDATA[",
       "<h1 title=\"@(question)\" class=\"question-text\" id=\"question_text_\\${this.label}\">",
@@ -9329,12 +9644,14 @@
 
   "TopTextCopy_Snippet": {
     "prefix": "top.text.copy",
+    "scope": "xml",
     "body": ["<style name='survey.question' arg:showText=\"$0\" copy=\"top_text\"/>"],
     "description": "XmlStyleSystemCustom/TopTextCopy"
   },
 
   "XMLCommentBox_Snippet": {
     "prefix": "comment.box",
+    "scope": "xml",
     "body": [
       "<style label=\"comment_box\" name='survey.question.instructions'> <![CDATA[",
       "<h2 title=\"@(instructions)\" class=\"instruction-text\">",
@@ -9348,6 +9665,7 @@
 
   "XMLCommentBoxCopy_Snippet": {
     "prefix": "comment.box.copy",
+    "scope": "xml",
     "body": ["<style copy=\"comment_box\" name='survey.question.instructions'/>"],
     "description": "XmlStyleSystemCustom/XMLCommentBoxCopy"
   }
