@@ -360,13 +360,18 @@ function checkInsertCondition(text: string, attribute: string): boolean {
 
 // Check Count Attribute
 function checkAttr(text: string, attribute: string): boolean {
-  const attrCount = (text.match(/<${attribute}/g) || []).length;
+  // Escaping special characters in attribute to avoid regex issues
+  const escapedAttribute = attribute.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const regex = new RegExp(`<${escapedAttribute}`, 'g');
+  const attrCount = (text.match(regex) || []).length;
 
-  return attrCount >= 1 ? true : false;
+  return attrCount > 0;
 }
 
 function attrCount(text: string, attribute: string): number {
-  const attrCount = (text.match(/<${attribute}/g) || []).length;
+  const escapedAttribute = attribute.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const regex = new RegExp(`<${escapedAttribute}`, 'g');
+  const attrCount = (text.match(regex) || []).length;
 
   return attrCount;
 }
@@ -1567,7 +1572,7 @@ ${selectedText}
         let printPage = '';
         const altLabel = alt ? `\n  <alt>${alt}</alt>` : '';
         let shuffle = '';
-        let style = '';
+        let style = '\n  uses="atmtable.6"';
         let comment = processedInput.includes('<comment>') ? '' : '<comment></comment>';
         let customRate =
           '\n  <style copy="custom_rating" arg:qmode="rating" arg:autoContinue="false" arg:autoNumber="true" arg:btnDirection="row" arg:leftText="" arg:rightText="" arg:showArrow="false" arg:showGroup="true" name="question.after"/>';
@@ -1578,7 +1583,6 @@ ${selectedText}
         }
 
         if (!checkAttr(processedInput, 'row') && !checkAttr(processedInput, 'insert')) {
-          style = '\n  uses="atmtable.6"';
           customRate = '';
         }
 
