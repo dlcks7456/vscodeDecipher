@@ -2405,9 +2405,7 @@
 
   "BoxShadow_Snippet": {
     "prefix": "shadow",
-    "body": [
-      "box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);"
-    ],
+    "body": ["box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);"],
     "description": "CSSLibrary/BoxShadow"
   },
 
@@ -2699,9 +2697,7 @@
 
   "CustomButtonStyle_Snippet": {
     "prefix": "btn",
-    "body": [
-      "ss:questionClassNames=\"sp-custom-btn btn-mw-500${1: btn-cols-1}\""
-    ],
+    "body": ["ss:questionClassNames=\"sp-custom-btn btn-mw-500${1: btn-cols-1}\""],
     "description": "CustomButton/CustomButtonStyle"
   },
 
@@ -3227,11 +3223,7 @@
 
   "Legends_Snippet": {
     "prefix": "legend",
-    "body": [
-      "colLegendRows=\"$0\"",
-      "rowLegend=\"both\"",
-      "colLegend=\"both\""
-    ],
+    "body": ["colLegendRows=\"$0\"", "rowLegend=\"both\"", "colLegend=\"both\""],
     "description": "DecipherOptions/Legends"
   },
 
@@ -3964,12 +3956,7 @@
 
   "NetPromoterScoreOptions_Snippet": {
     "prefix": "nps.opt",
-    "body": [
-      "nps:legendPosition=\"Below\"",
-      "nps:leftLegend=\"\"",
-      "nps:midLegend=\"\"",
-      "nps:rightLegend=\"\""
-    ],
+    "body": ["nps:legendPosition=\"Below\"", "nps:leftLegend=\"\"", "nps:midLegend=\"\"", "nps:rightLegend=\"\""],
     "description": "DecipherQuestions/NetPromoterScoreOptions"
   },
 
@@ -4181,9 +4168,7 @@
 
   "ConditionTag_Snippet": {
     "prefix": "condition",
-    "body": [
-      "<condition label=\"${1:[QID]}\" cond=\"${2:[COND]}\">$0</condition>"
-    ],
+    "body": ["<condition label=\"${1:[QID]}\" cond=\"${2:[COND]}\">$0</condition>"],
     "description": "DecipherTag/ConditionTag"
   },
 
@@ -4246,22 +4231,13 @@
 
   "QCNote_Snippet": {
     "prefix": "qc",
-    "body": [
-      "<note sst=\"0\">",
-      "## VER ${1:1}",
-      "#### ${2:QID}",
-      "- $0",
-      "</note>"
-    ],
+    "body": ["<note sst=\"0\">", "## VER ${1:1}", "#### ${2:QID}", "- $0", "</note>"],
     "description": "DecipherTag/QCNote"
   },
 
   "QuotaTag_Snippet": {
     "prefix": "quota",
-    "body": [
-      "<quota label=\"${1:[QUOTA]}\" sheet=\"${1:[QUOTA]}\"/>",
-      "<suspend/>"
-    ],
+    "body": ["<quota label=\"${1:[QUOTA]}\" sheet=\"${1:[QUOTA]}\"/>", "<suspend/>"],
     "description": "DecipherTag/QuotaTag"
   },
 
@@ -4295,9 +4271,7 @@
 
   "TermTag_Snippet": {
     "prefix": "term",
-    "body": [
-      "<term label=\"${1:[QID]}_Term\" cond=\"${2:[COND]}\">${1:[QID]} term</term>"
-    ],
+    "body": ["<term label=\"${1:[QID]}_Term\" cond=\"${2:[COND]}\">${1:[QID]} term</term>"],
     "description": "DecipherTag/TermTag"
   },
 
@@ -4618,9 +4592,7 @@
 
   "CardsortChangeCurrentTextCopy_Snippet": {
     "prefix": "cardsort.show.text.copy",
-    "body": [
-      "<style copy=\"cardsort_current_card\" name=\"question.after\" wrap=\"ready\"/>"
-    ],
+    "body": ["<style copy=\"cardsort_current_card\" name=\"question.after\" wrap=\"ready\"/>"],
     "description": "DynamicQuestions/CardsortChangeCurrentTextCopy"
   },
 
@@ -5324,10 +5296,7 @@
 
   "ThisOrThat_Snippet": {
     "prefix": "thisorthat",
-    "body": [
-      "ss:rowClassNames=\"this-or-that ${1:base1}-this\"",
-      "ss:rowClassNames=\"this-or-that ${1:base1}-that\""
-    ],
+    "body": ["ss:rowClassNames=\"this-or-that ${1:base1}-this\"", "ss:rowClassNames=\"this-or-that ${1:base1}-that\""],
     "description": "JavaScriptLibrary/ThisOrThat"
   },
 
@@ -6339,11 +6308,7 @@
 
   "LoadRecord_Snippet": {
     "prefix": "rec",
-    "body": [
-      "rec = loadRecord(\"selfserve/548/${1:[PID]}\", \"${2:[KEY]}\", ${2:[KEY]})",
-      "if rec:",
-      "  $0"
-    ],
+    "body": ["rec = loadRecord(\"selfserve/548/${1:[PID]}\", \"${2:[KEY]}\", ${2:[KEY]})", "if rec:", "  $0"],
     "description": "PythonLibrary/LoadRecord"
   },
 
@@ -6672,12 +6637,13 @@
       "  shuffle=\"rows\"",
       "  unique=\"1\"",
       "  ss:questionClassNames=\"niq-rk-question sp-custom-btn\">",
-      "  <title><div class=\"q-name\">${1:[QID]}</div> ${2:TITLE]}</title>",
-      "  <style copy=\"custom_rank\" arg:autoClick=\"true\" arg:autoContinue=\"false\" arg:colCnt=\"${3:1}\" arg:ableNone=\"${5:1}\" arg:noneLabel=\"${6:null}\" arg:showAnswers=\"true\" arg:ableSort=\"true\" arg:showGroups=\"false\" arg:toggle=\"false\" arg:showCnt=\"true\" name=\"question.after\"/>",
+      "  <alt>${2:${1:QID}:RANK 2</alt>}",
+      "  <title><div class=\"q-name\">${1:[QID]}</div> ${3:TITLE]}</title>",
+      "  <style copy=\"custom_rank\" arg:autoClick=\"true\" arg:autoContinue=\"false\" arg:colCnt=\"${4:1}\" arg:ableNone=\"${5:1}\" arg:noneLabel=\"${6:null}\" arg:showAnswers=\"true\" arg:ableSort=\"true\" arg:showGroups=\"false\" arg:toggle=\"false\" arg:showCnt=\"true\" name=\"question.after\"/>",
       "  <col label=\"c1\">1순위</col>",
       "  <col label=\"c2\">2순위</col>",
       "  $0",
-      "  ${4:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
+      "  ${6:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
       "</radio>",
       "",
       "<suspend/>"
@@ -6694,18 +6660,44 @@
       "  shuffle=\"rows\"",
       "  unique=\"1\"",
       "  ss:questionClassNames=\"niq-rk-question sp-custom-btn\">",
-      "  <title><div class=\"q-name\">${1:[QID]}</div> ${2:[TITLE]}</title>",
-      "  <style copy=\"custom_rank\" arg:autoClick=\"true\" arg:autoContinue=\"false\" arg:colCnt=\"${3:1}\" arg:ableNone=\"${5:1}\" arg:noneLabel=\"${6:null}\" arg:showAnswers=\"true\" arg:ableSort=\"true\" arg:showGroups=\"false\" arg:toggle=\"false\" arg:showCnt=\"true\" name=\"question.after\"/>",
+      "  <alt>${2:${1:QID}:RANK 3</alt>}",
+      "  <title><div class=\"q-name\">${1:[QID]}</div> ${3:[TITLE]}</title>",
+      "  <style copy=\"custom_rank\" arg:autoClick=\"true\" arg:autoContinue=\"false\" arg:colCnt=\"${4:1}\" arg:ableNone=\"${5:1}\" arg:noneLabel=\"${6:null}\" arg:showAnswers=\"true\" arg:ableSort=\"true\" arg:showGroups=\"false\" arg:toggle=\"false\" arg:showCnt=\"true\" name=\"question.after\"/>",
       "  <col label=\"c1\">1순위</col>",
       "  <col label=\"c2\">2순위</col>",
       "  <col label=\"c3\">3순위</col>",
       "  $0",
-      "  ${4:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
+      "  ${6:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
       "</radio>",
       "",
       "<suspend/>"
     ],
     "description": "RankQuestion/Rank3"
+  },
+
+  "Rank4_Snippet": {
+    "prefix": "rk4",
+    "body": [
+      "<radio ",
+      "  label=\"${1:[QID]}\"",
+      "  grouping=\"cols\"",
+      "  shuffle=\"rows\"",
+      "  unique=\"1\"",
+      "  ss:questionClassNames=\"niq-rk-question sp-custom-btn\">",
+      "  <alt>${2:${1:QID}:RANK 4</alt>}",
+      "  <title><div class=\"q-name\">${1:[QID]}</div> ${3:[TITLE]}</title>",
+      "  <style copy=\"custom_rank\" arg:autoClick=\"true\" arg:autoContinue=\"false\" arg:colCnt=\"${4:1}\" arg:ableNone=\"${5:1}\" arg:noneLabel=\"${6:null}\" arg:showAnswers=\"true\" arg:ableSort=\"true\" arg:showGroups=\"false\" arg:toggle=\"false\" arg:showCnt=\"true\" name=\"question.after\"/>",
+      "  <col label=\"c1\">1순위</col>",
+      "  <col label=\"c2\">2순위</col>",
+      "  <col label=\"c3\">3순위</col>",
+      "  <col label=\"c4\">4순위</col>",
+      "  $0",
+      "  ${6:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
+      "</radio>",
+      "",
+      "<suspend/>"
+    ],
+    "description": "RankQuestion/Rank5"
   },
 
   "Rank5_Snippet": {
@@ -6717,15 +6709,16 @@
       "  shuffle=\"rows\"",
       "  unique=\"1\"",
       "  ss:questionClassNames=\"niq-rk-question sp-custom-btn\">",
-      "  <title><div class=\"q-name\">${1:[QID]}</div> ${2:[TITLE]}</title>",
-      "  <style copy=\"custom_rank\" arg:autoClick=\"true\" arg:autoContinue=\"false\" arg:colCnt=\"${3:1}\" arg:ableNone=\"${5:1}\" arg:noneLabel=\"${6:null}\" arg:showAnswers=\"true\" arg:ableSort=\"true\" arg:showGroups=\"false\" arg:toggle=\"false\" arg:showCnt=\"true\" name=\"question.after\"/>",
+      "  <alt>${2:${1:QID}:RANK 5</alt>}",
+      "  <title><div class=\"q-name\">${1:[QID]}</div> ${3:[TITLE]}</title>",
+      "  <style copy=\"custom_rank\" arg:autoClick=\"true\" arg:autoContinue=\"false\" arg:colCnt=\"${4:1}\" arg:ableNone=\"${5:1}\" arg:noneLabel=\"${6:null}\" arg:showAnswers=\"true\" arg:ableSort=\"true\" arg:showGroups=\"false\" arg:toggle=\"false\" arg:showCnt=\"true\" name=\"question.after\"/>",
       "  <col label=\"c1\">1순위</col>",
       "  <col label=\"c2\">2순위</col>",
       "  <col label=\"c3\">3순위</col>",
       "  <col label=\"c4\">4순위</col>",
       "  <col label=\"c5\">5순위</col>",
       "  $0",
-      "  ${4:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
+      "  ${6:<row label=\"r99\" okUnique=\"1\" randomize=\"0\" ss:rowClassNames=\"exclusive\" value=\"99\">없음</row>}",
       "</radio>",
       "",
       "<suspend/>"
@@ -6751,9 +6744,7 @@
 
   "RankNone_Snippet": {
     "prefix": "rk.none",
-    "body": [
-      "<row label=\"r$0\" randomize=\"0\" value=\"$0\" okUnique=\"1\">없음</row>"
-    ],
+    "body": ["<row label=\"r$0\" randomize=\"0\" value=\"$0\" okUnique=\"1\">없음</row>"],
     "description": "RankQuestion/RankNone"
   },
 
@@ -6894,93 +6885,112 @@
       "      row.text = res.rate_show_score_text % (scale_qid.cols[scale_qid.attr(row.label).val].value, scale_qid.attr(row.label).text)",
       "",
       "def scale_rank_items(scale_qid, rank_qid, reverse=True):",
-      "  if gv.isSST():",
-      "    return {",
-      "      'show': [x.label for x in rank_qid.rows],",
-      "      'skip': False,",
-      "      'auto': [],",
-      "      'low': []",
-      "    }",
+      "    if gv.isSST():",
+      "      return {",
+      "          'show': [x.label for x in rank_qid.rows],",
+      "          'skip': False,",
+      "          'auto': [],",
+      "          'low': []",
+      "        }",
       "",
-      "  try:",
-      "    scale_answer = {x.label: x.val for x in scale_qid.rows.order if x.any}",
-      "    sorted_list = sorted(scale_answer.items(), key=lambda item: item[1], reverse=reverse)",
-      "    rank_cols = [each for each in rank_qid.cols]",
-      "    if not reverse:",
-      "      rank_cols.reverse()",
+      "    try:",
+      "      scale_answer = {x.label: x.val for x in scale_qid.rows.order if x.any}",
+      "      sorted_list = sorted(scale_answer.items(), key=lambda item: item[1], reverse=reverse)",
+      "      rank_cols = [each for each in rank_qid.cols]",
+      "      if not reverse:",
+      "        rank_cols.reverse()",
       "",
-      "    sort_rows = []",
-      "    current_value = None",
-      "    current_group = []",
-      "    for item in sorted_list:",
-      "      key, value = item",
-      "      if value != current_value:",
-      "        if current_group:",
-      "          sort_rows.append(current_group)",
-      "        current_group = [key]",
-      "        current_value = value",
-      "      else:",
-      "        current_group.append(key)",
-      "    if current_group:",
-      "      sort_rows.append(current_group)",
+      "      sort_rows = []",
+      "      current_value = None",
+      "      current_group = []",
       "",
-      "    rank_able_answer = []",
-      "    auto_rows = []",
-      "    rowCond = []",
-      "    for idx, eachCol in enumerate(rank_cols):",
-      "      if idx ge len(sort_rows):",
-      "        continue",
-      "      row_label = sort_rows[idx]",
-      "      rank_able_answer.append(row_label)",
-      "      if len(rowCond) ge len(rank_cols):",
-      "        continue",
-      "      for x in row_label:",
-      "        rowCond.append(x)",
-      "",
-      "    if str(rank_qid.o.shuffle).strip() == 'rows':",
-      "      rank_qid.rows.order = [scale_qid.attr(each).index for each in sum(sort_rows, [])]",
-      "",
-      "    skip_cond = all(len(row) == 1 for row in rank_able_answer)",
-      "    for idx, row_list in enumerate(rank_able_answer):",
-      "      if len(row_list) == 1:",
-      "        auto_rows.append([idx, row_list[0]])",
-      "      else:",
-      "        break",
-      "",
-      "    last_label = []",
-      "    if not skip_cond:",
-      "      row_score_dict = {x: int(scale_qid.cols[scale_qid.attr(x).val].value) for x in rowCond}",
-      "      score_list = row_score_dict.values()",
-      "      if len(score_list) == len(rank_qid.cols):",
-      "        score_flag = min(score_list) if reverse else max(score_list)",
-      "        min_rows = [lb for lb, ans in row_score_dict.items() if ans == score_flag]",
-      "        chk_cnt = 1",
-      "        while True:",
-      "          if len(min_rows) == 1:",
-      "            low_attr = min_rows[0]",
-      "            rowCond.remove(low_attr)",
-      "            last_label.append(low_attr)",
-      "            row_score_dict = {x: int(scale_qid.cols[scale_qid.attr(x).val].value) for x in rowCond}",
-      "            score_list = row_score_dict.values()",
-      "            score_flag = min(score_list)",
-      "            min_rows = [lb for lb, ans in row_score_dict.items() if ans == score_flag]",
-      "            chk_cnt += 1",
+      "      for item in sorted_list:",
+      "          key, value = item",
+      "          if value != current_value:",
+      "              if current_group:",
+      "                  sort_rows.append(current_group)",
+      "              current_group = [key]",
+      "              current_value = value",
       "          else:",
-      "            break",
+      "              current_group.append(key)",
       "",
-      "    return {",
-      "      'show': rowCond,",
-      "      'skip': skip_cond,",
-      "      'auto': auto_rows,",
-      "      'low': last_label",
-      "    }",
-      "  except:",
-      "    return {",
-      "      'show': [x.label for x in rank_qid.rows],",
-      "      'skip': False,",
-      "      'auto': [],",
-      "      'low': []",
-      "    }",
+      "      if current_group:",
+      "          sort_rows.append(current_group)",
+      "",
+      "      rank_able_answer = []",
+      "      rank_auto_row = {}",
+      "      rowCond = []",
+      "      for idx, eachCol in enumerate(rank_cols):",
+      "        if idx ge len(sort_rows):",
+      "          continue",
+      "        row_label = sort_rows[idx]",
+      "        rank_able_answer.append(row_label)",
+      "",
+      "        if len(rowCond) ge len(rank_cols):",
+      "          continue",
+      "",
+      "        for x in row_label:",
+      "          rowCond.append(x)",
+      "",
+      "      if str(rank_qid.o.shuffle).strip() == 'rows':",
+      "        rank_qid.rows.order = [scale_qid.attr(each).index for each in sum(sort_rows, [])]",
+      "",
+      "      skip_cond = all(len(row) == 1 for row in rank_able_answer)",
+      "      print(rank_able_answer)",
+      "      print(rowCond)",
+      "",
+      "      auto_rows = []",
+      "      for idx, row_list in enumerate(rank_able_answer):",
+      "        if len(row_list) == 1:",
+      "          auto_rows.append([idx, row_list[0]])",
+      "        else:",
+      "          break",
+      "",
+      "      last_label = []",
+      "",
+      "      if not skip_cond:",
+      "        row_score_dict = {x: int(scale_qid.cols[scale_qid.attr(x).val].value) for x in rowCond}",
+      "        print(row_score_dict)",
+      "",
+      "        score_list = row_score_dict.values()",
+      "",
+      "        if len(score_list) == len(rank_qid.cols):",
+      "          score_flag = min(score_list) if reverse else max(score_list)",
+      "          min_rows = [lb for lb, ans in row_score_dict.items() if ans == score_flag]",
+      "          print('Min Score', score_flag)",
+      "          print(min_rows)",
+      "",
+      "          chk_cnt = 1",
+      "          while True:",
+      "            print(chk_cnt)",
+      "            if len(min_rows) == 1:",
+      "              low_attr = min_rows[0]",
+      "              print(low_attr)",
+      "              rowCond.remove(low_attr)",
+      "              last_label.append(low_attr)",
+      "              row_score_dict = {x: int(scale_qid.cols[scale_qid.attr(x).val].value) for x in rowCond}",
+      "              score_list = row_score_dict.values()",
+      "              score_flag = min(score_list)",
+      "              min_rows = [lb for lb, ans in row_score_dict.items() if ans == score_flag]",
+      "              print(low_attr, min_rows)",
+      "              chk_cnt += 1",
+      "              print('')",
+      "            else:",
+      "              break",
+      "",
+      "      return {",
+      "        'show': rowCond,",
+      "        'skip': skip_cond,",
+      "        'auto': auto_rows,",
+      "        'low': last_label",
+      "      }",
+      "    except:",
+      "      return {",
+      "          'show': [x.label for x in rank_qid.rows],",
+      "          'skip': False,",
+      "          'auto': [],",
+      "          'low': []",
+      "        }",
       "",
       "def scale_rank_auto(rank_qid, auto_list):",
       "  for idx, lb in auto_list:",
@@ -6997,12 +7007,16 @@
       "  for idx, eachCol in enumerate(this.cols):",
       "    if not eachCol.displayed:",
       "      continue",
+      "",
       "    if (not hasattr(scale_qid, this.rows[eachCol.val].label)) or (scale_qid.attr(this.rows[eachCol.val].label).val is None):",
       "      continue",
+      "",
       "    if idx == (len([c for c in this.cols if c.displayed]) - 1):",
       "      continue",
+      "",
       "    curr = eachCol",
       "    next = this.cols[idx + 1]",
+      "",
       "    curr_value = scale_qid.rows[curr.val].val",
       "    next_value = scale_qid.rows[next.val].val",
       "",
@@ -7021,9 +7035,9 @@
       "    error_answer = []",
       "",
       "    if reverse:",
-      "      error_answer = [r.label for r in remain_rows if scale_qid.cols[r.val].value > answer_value]",
+      "      error_answer = [r.label for r in remain_rows if scale_qid.cols[r.val].value gt answer_value]",
       "    else:",
-      "      error_answer = [r.label for r in remain_rows if scale_qid.cols[r.val].value < answer_value]",
+      "      error_answer = [r.label for r in remain_rows if scale_qid.cols[r.val].value lt answer_value]",
       "",
       "    if error_answer:",
       "      err_flag = True",
@@ -7033,6 +7047,17 @@
       "          error(res.rank_remain_err, row=high_row)",
       "        else:",
       "          error(res.rank_rv_remain_err, row=high_row)",
+      "",
+      "    if not err_flag:",
+      "      row_score_dict = {x: int(scale_qid.cols[scale_qid.attr(x.label).val].value) for x in this.rows if x.displayed and scale_qid.attr(x.label).displayed}",
+      "      low_labels = scale_rank_items(scale_qid, this, reverse=reverse)['low']",
+      "",
+      "      if low_labels:",
+      "        rv_cols = this.cols[::-1]",
+      "        for idx, low in enumerate(low_labels):",
+      "          if rv_cols[idx].displayed and rv_cols[idx].any:",
+      "            continue",
+      "          rv_cols[idx].val = this.attr(low).index",
       "</exec>"
     ],
     "description": "RankQuestion/RateBaseRankSetting"
@@ -7511,9 +7536,7 @@
 
   "StepByStepQuestionValidationSet_Snippet": {
     "prefix": "sbs.vali",
-    "body": [
-      "sbs_validation([${1:[QID]}x1, ${1:[QID]}x2, ${1:[QID]}x3], ${1:[QID]}none)"
-    ],
+    "body": ["sbs_validation([${1:[QID]}x1, ${1:[QID]}x2, ${1:[QID]}x3], ${1:[QID]}none)"],
     "description": "StepByStep/StepByStepQuestionValidationSet"
   },
 
@@ -7716,13 +7739,7 @@
 
   "PageHeadStyle_Snippet": {
     "prefix": "page.head",
-    "body": [
-      "<style name=\"page.head\"><![CDATA[",
-      "<style>",
-      "${0}",
-      "</style>",
-      "]]></style>"
-    ],
+    "body": ["<style name=\"page.head\"><![CDATA[", "<style>", "${0}", "</style>", "]]></style>"],
     "description": "XmlStyleSystem/PageHeadStyle"
   },
 
@@ -7744,11 +7761,7 @@
 
   "QuestionAfterStyleTag_Snippet": {
     "prefix": "question.after",
-    "body": [
-      "<style name=\"question.after\" wrap=\"ready\"><![CDATA[",
-      "${0}",
-      "]]></style>"
-    ],
+    "body": ["<style name=\"question.after\" wrap=\"ready\"><![CDATA[", "${0}", "]]></style>"],
     "description": "XmlStyleSystem/QuestionAfterStyleTag"
   },
 
@@ -8193,11 +8206,7 @@
 
   "RespviewClientMeta_Snippet": {
     "prefix": "resp.client.meta",
-    "body": [
-      "<style name=\"respview.client.meta\"> <![CDATA[",
-      "",
-      "]]></style>"
-    ],
+    "body": ["<style name=\"respview.client.meta\"> <![CDATA[", "", "]]></style>"],
     "description": "XmlStyleSystem/RespviewClientMeta"
   },
 
@@ -8437,9 +8446,7 @@
 
   "CommentCalloutCopy_Snippet": {
     "prefix": "callout.copy",
-    "body": [
-      "<style name='survey.question.instructions' copy=\"comment_callout\" arg:calloutHeader=\"${1:[TAB1]}\"/>"
-    ],
+    "body": ["<style name='survey.question.instructions' copy=\"comment_callout\" arg:calloutHeader=\"${1:[TAB1]}\"/>"],
     "description": "XmlStyleSystemCustom/CommentCalloutCopy"
   },
 
@@ -8566,9 +8573,7 @@
 
   "ElementTextSelectCustomCopy_Snippet": {
     "prefix": "el.text.select",
-    "body": [
-      "<style copy=\"text_to_select\" arg:optionItems=\"${1:range(2021, 2025)}\" name=\"el.text\"/>"
-    ],
+    "body": ["<style copy=\"text_to_select\" arg:optionItems=\"${1:range(2021, 2025)}\" name=\"el.text\"/>"],
     "description": "XmlStyleSystemCustom/ElementTextSelectCustomCopy"
   },
 
@@ -8906,17 +8911,13 @@
 
   "NoElementTextCopy_Snippet": {
     "prefix": "no.el.text.copy",
-    "body": [
-      "<style copy=\"no_els_text\" arg:textTitle=\"$0\" name=\"el.text\"/>"
-    ],
+    "body": ["<style copy=\"no_els_text\" arg:textTitle=\"$0\" name=\"el.text\"/>"],
     "description": "XmlStyleSystemCustom/NoElementTextCopy"
   },
 
   "NoRowsInputCopy_Snippet": {
     "prefix": "no.el.ip.copy",
-    "body": [
-      "<style copy=\"no_els_input\" arg:numberTitle=\"$0\" name=\"el.text\"/>"
-    ],
+    "body": ["<style copy=\"no_els_input\" arg:numberTitle=\"$0\" name=\"el.text\"/>"],
     "description": "XmlStyleSystemCustom/NoRowsInputCopy"
   },
 
@@ -9123,9 +9124,7 @@
 
   "TextareaWithTitleCopy_Snippet": {
     "prefix": "textarea.title.copy",
-    "body": [
-      "<style copy=\"textarea_title\" arg:subTitle=\"$0\" name=\"el.textarea\"/>"
-    ],
+    "body": ["<style copy=\"textarea_title\" arg:subTitle=\"$0\" name=\"el.textarea\"/>"],
     "description": "XmlStyleSystemCustom/TextareaWithTitleCopy"
   },
 
@@ -9195,9 +9194,7 @@
 
   "ToggleGroupColumnCSSCopy_Snippet": {
     "prefix": "tog.group.cols.copy",
-    "body": [
-      "<style name=\"page.head\" copy=\"tog_group_cols\" arg:colCount=\"2\"/>"
-    ],
+    "body": ["<style name=\"page.head\" copy=\"tog_group_cols\" arg:colCount=\"2\"/>"],
     "description": "XmlStyleSystemCustom/ToggleGroupColumnCSSCopy"
   },
 
@@ -9332,9 +9329,7 @@
 
   "TopTextCopy_Snippet": {
     "prefix": "top.text.copy",
-    "body": [
-      "<style name='survey.question' arg:showText=\"$0\" copy=\"top_text\"/>"
-    ],
+    "body": ["<style name='survey.question' arg:showText=\"$0\" copy=\"top_text\"/>"],
     "description": "XmlStyleSystemCustom/TopTextCopy"
   },
 
@@ -9353,9 +9348,7 @@
 
   "XMLCommentBoxCopy_Snippet": {
     "prefix": "comment.box.copy",
-    "body": [
-      "<style copy=\"comment_box\" name='survey.question.instructions'/>"
-    ],
+    "body": ["<style copy=\"comment_box\" name='survey.question.instructions'/>"],
     "description": "XmlStyleSystemCustom/XMLCommentBoxCopy"
   }
 }

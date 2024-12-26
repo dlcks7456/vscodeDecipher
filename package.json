@@ -189,6 +189,10 @@
       {
         "command": "decipher-niq-package.makeVideo",
         "title": "Make Video Question"
+      },
+      {
+        "command": "decipher-niq-package.makeRankColumns",
+        "title": "Make Rank Columns Macro"
       }
     ],
     "keybindings": [
@@ -400,6 +404,11 @@
       {
         "command": "decipher-niq-package.makeVideo",
         "key": "ctrl+shift+v",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.makeRankColumns",
+        "key": "ctrl+alt+2",
         "when": "editorTextFocus && editorLangId == 'xml'"
       }
     ],
