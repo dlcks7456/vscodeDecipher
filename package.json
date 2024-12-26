@@ -2,6 +2,8 @@
   "name": "decipher-niq-package",
   "displayName": "decipher-niq-package",
   "description": "Decipher ShortCut and Snippet for NIQ KOR SUD",
+  "publisher": "NIQ KOR SUD. Chan.Lee",
+  "icon": "images/icon.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
