@@ -1,10 +1,6 @@
 # Decipher VS Code Package_NIQ KOR SUD:Chan.lee
 
-> **Provider** : **[Chan.lee](Chan.lee@nielseniq.com)**
-
 > Version : **1.0.0**
-
-> [!tip] [dlcks7456/vscodeDecipher](https://github.com/dlcks7456/vscodeDecipher.git)
 
 | ShortCut         | Feature                      | Description                                      | UseFormat |
 | :--------------- | :--------------------------- | ------------------------------------------------ | --------- |
