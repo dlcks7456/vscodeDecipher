@@ -449,7 +449,7 @@
     "lint": "eslint src",
     "test": "vscode-test",
     "build": "tsc",
-    "package": "vsce package",
+    "package": "vsce package && (if not exist version mkdir version) && move decipher-niq-package-*.vsix version/",
     "publish": "vsce publish"
   },
   "devDependencies": {
