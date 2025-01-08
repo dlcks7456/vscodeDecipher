@@ -203,6 +203,7 @@ const executeCommand = async (
           const parts = line.split(/\s/, 2); // 첫 번째 공백을 기준으로 분리
           ordinal = parts[0]?.trim().replace(/[.)]+$/, ''); // 끝에 붙은 . 또는 ) 제거
           content = parts.length === 2 ? parts[1].trim() : content;
+          content = content;
         }
 
         if (isOtherSpecify(content) && attrType !== 'group') {
@@ -226,7 +227,8 @@ const executeCommand = async (
         }
       });
 
-      const updatedText = checkDupeElement(printPage);
+      let updatedText = checkDupeElement(printPage);
+      updatedText = updatedText.replace(/&/g, '&amp;');
 
       editor.edit((editBuilder) => {
         editBuilder.replace(selection, updatedText);
@@ -245,6 +247,7 @@ function tidyQuestionInput(input: string): [string, string, string, string | nul
     .map((line) => line.trim())
     .join('\n');
   input = input.replace(/^(\w?\d+)\.(\d+)/gm, '$1_$2');
+  // vscode.window.showErrorMessage(input);
 
   // 2024-01-19 alt update
   // alt label check
@@ -499,7 +502,8 @@ export function activate(context: vscode.ExtensionContext) {
           });
 
           // 중복 확인 및 결과 반영
-          const updatedText = checkDupeElement(output);
+          let updatedText = checkDupeElement(output);
+          updatedText = updatedText.replace(/&/g, '&amp;');
 
           await editor.edit((editBuilder) => {
             editBuilder.replace(selection, updatedText);
