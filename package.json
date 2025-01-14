@@ -4,7 +4,7 @@
   "description": "Decipher ShortCut and Snippet for NIQ KOR SUD",
   "publisher": "NIQ KOR SUD. Chan.Lee",
   "icon": "images/icon.png",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "repository": {
     "type": "git",
     "url": "https://github.com/dlcks7456/vscodeDecipher.git"
@@ -461,10 +461,11 @@
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1",
     "eslint": "^9.16.0",
-    "typescript": "^5.7.2",
+    "typescript": "^5.7.3",
     "vsce": "^2.15.0"
   },
   "dependencies": {
-    "cartesian-product-generator": "^1.1.1"
+    "cartesian-product-generator": "^1.1.1",
+    "tsc": "^2.0.4"
   }
 }
