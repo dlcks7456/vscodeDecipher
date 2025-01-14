@@ -4,7 +4,7 @@
   "description": "Decipher ShortCut and Snippet for NIQ KOR SUD",
   "publisher": "NIQ KOR SUD. Chan.Lee",
   "icon": "images/icon.png",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/dlcks7456/vscodeDecipher.git"
@@ -429,6 +429,10 @@
       {
         "language": "plaintext",
         "path": "./decipherPlain.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./datacheckJupyter.code-snippets"
       }
     ],
     "grammars": [

@@ -1,0 +1,181 @@
+{
+  "safreqSnippet": {
+    "prefix": "sa",
+    "scope": "ipynb",
+    "body": ["df.safreq($0)"],
+    "description": "SA Variable Check"
+  },
+  "mafreqSnippet": {
+    "prefix": "ma",
+    "scope": "ipynb",
+    "body": ["df.mafreq($0)"],
+    "description": "MA Variable Check"
+  },
+  "dupchkSnippet": {
+    "prefix": "dup",
+    "scope": "ipynb",
+    "body": ["df.dupchk($0)"],
+    "description": "Duplicate Answer Check"
+  },
+  "logchkSnippet": {
+    "prefix": "log",
+    "scope": "ipynb",
+    "body": ["df.logchk(base=$1, ans=$2)"],
+    "description": "Logic Check"
+  },
+  "masaSnippet": {
+    "prefix": "masa",
+    "scope": "ipynb",
+    "body": ["df.masa(${1: MA(BASE)}, ${2: SA})"],
+    "description": "MA Base SA Logic Check"
+  },
+  "mamaSnippet": {
+    "prefix": "mama",
+    "scope": "ipynb",
+    "body": ["df.mama(${1: MA(BASE)}, ${2: MA})"],
+    "description": "MA Base MA Logic Check"
+  },
+  "markSnippet": {
+    "prefix": "mark",
+    "scope": "ipynb",
+    "body": ["df.mark(${1: MA(BASE)}, ${2: RK})"],
+    "description": "MA Base Rank Logic Check"
+  },
+  "raterankSnippet": {
+    "prefix": "rate.rk",
+    "scope": "ipynb",
+    "body": ["df.rate_rank(${1: RATE(BASE)}, ${2: RK})"],
+    "description": "Rating Base Rank Logic Check"
+  },
+  "dataCheckImportSnippet": {
+    "prefix": "import.chk",
+    "scope": "ipynb",
+    "body": [
+      "from decipherAutomatic.dataProcessing.dataCheck import DecipherSetting",
+      "import pandas as pd"
+    ],
+    "description": "Import DataCheck Library"
+  },
+  "decipherSettingSnippet": {
+    "prefix": "decipher.set",
+    "scope": "ipynb",
+    "body": ["DecipherSetting(${1:pid}, use_variable=${2:True})"],
+    "description": "Decipher DataCheck Setting"
+  },
+  "getFilesImportSnippet": {
+    "prefix": "import.get",
+    "scope": "ipynb",
+    "body": ["from decipherAutomatic.getFiles import *"],
+    "description": "Import getFiles Library"
+  },
+  "getLayoutSnippet": {
+    "prefix": "get.layout",
+    "scope": "ipynb",
+    "body": ["get_layout_id(${1:pid})"],
+    "description": "Get Decipher Layout (to dict)"
+  },
+  "projectFilesSnippet": {
+    "prefix": "project.file",
+    "scope": "ipynb",
+    "body": [
+      "project_files(",
+      "  pid=${1:pid},",
+      "  delivery=True,",
+      "  cond='qualified',",
+      "  xml=True,",
+      "  data=True,",
+      "  layout=True,",
+      "  quota=True,",
+      "  lang=True,",
+      "  ce=65320,",
+      "  oe=65321",
+      ")"
+    ],
+    "description": "Decipher Project Backup"
+  },
+  "displayErrorSnippet": {
+    "prefix": "display.err",
+    "scope": "ipynb",
+    "body": ["df.display_msg = 'error'"],
+    "description": "Display Error Message"
+  },
+  "displayNoneSnippet": {
+    "prefix": "display.none",
+    "scope": "ipynb",
+    "body": ["df.display_msg = None"],
+    "description": "Display None"
+  },
+  "displayAllSnippet": {
+    "prefix": "display.all",
+    "scope": "ipynb",
+    "body": ["df.display_msg = 'all'"],
+    "description": "Display All Message"
+  },
+  "rangeSnippet": {
+    "prefix": "range",
+    "scope": "ipynb",
+    "body": ["range(${1:0, 100})"],
+    "description": "Range Snippet"
+  },
+  "qsetSnippet": {
+    "prefix": "qset",
+    "scope": "ipynb",
+    "body": ["df.qset('$1', [$2])"],
+    "description": "QID setting"
+  },
+  "countColSnippet": {
+    "prefix": "cnt",
+    "scope": "ipynb",
+    "body": ["df.count_col('${1:QID}_cnt', ${2:[]})"],
+    "description": "Count Col Snippet"
+  },
+  "sumColSnippet": {
+    "prefix": "sum",
+    "scope": "ipynb",
+    "body": ["df.sum_col('${1:QID}_sum', ${2:[]})"],
+    "description": "sum Col Snippet"
+  },
+  "maToListSnippet": {
+    "prefix": "ma.list",
+    "scope": "ipynb",
+    "body": ["df.ma_to_list('${1:}_list', ${2:[]})"],
+    "description": "MA to List Snippet"
+  },
+  "noteSnippet": {
+    "prefix": "note",
+    "scope": "ipynb",
+    "body": ["df.note('$1')"],
+    "description": "Note Snippet"
+  },
+  "setFilterSnippet": {
+    "prefix": "filt",
+    "scope": "ipynb",
+    "body": ["df.set_filter($1)"],
+    "description": "Set up Filter"
+  },
+  "liveOnlySnippet": {
+    "prefix": "live",
+    "scope": "ipynb",
+    "body": ["df.live_only()"],
+    "description": "Live Only Note"
+  },
+  "importUtilImageSnippet": {
+    "prefix": "util.img",
+    "scope": "ipynb",
+    "body": ["from decipherAutomatic.utils.Image import *"],
+    "description": "Import Util Image"
+  },
+  "imageResizeSnippet": {
+    "prefix": "img.resize",
+    "scope": "ipynb",
+    "body": [
+      "folder = '${1}'",
+      "imgs = list_image_files(folder)",
+      "mean_width = get_mean_width(folder)",
+      "",
+      "for img in imgs :",
+      "    image_resize(img, width=mean_width, height=mean_width)"
+    ],
+    "description": "Image Resize Example"
+  }
+}
