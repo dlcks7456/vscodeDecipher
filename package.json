@@ -202,6 +202,10 @@
       {
         "command": "decipher-niq-package.makeRankColumns",
         "title": "Make Rank Columns Macro"
+      },
+      {
+        "command": "decipher-niq-package.findMatchingLabel",
+        "title": "Find Matching XML Label"
       }
     ],
     "keybindings": [
@@ -418,6 +422,11 @@
       {
         "command": "decipher-niq-package.makeRankColumns",
         "key": "ctrl+alt+2",
+        "when": "editorTextFocus && editorLangId == 'xml'"
+      },
+      {
+        "command": "decipher-niq-package.findMatchingLabel",
+        "key": "ctrl+alt+f",
         "when": "editorTextFocus && editorLangId == 'xml'"
       }
     ],

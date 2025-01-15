@@ -399,6 +399,51 @@ function attrCount(text: string, attribute: string): number {
   return attrCount;
 }
 
+function generateHtml(matches: string[]): string {
+  const highlightJsCdn =
+    'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js';
+  const highlightCssCdn =
+    'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css';
+
+  const formattedMatches = matches
+    .map(
+      (m, i) => `<pre><code class="xml">${escapeHtml(m.trim())}</code></pre>`
+    )
+    .join('<hr>');
+
+  return `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>XML Matches</title>
+      <link rel="stylesheet" href="${highlightCssCdn}">
+      <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        pre { background: #f5f5f5; padding: 10px; border-radius: 5px; }
+        hr { margin: 20px 0; }
+      </style>
+    </head>
+    <body>
+      <h1>Search Question</h1>
+      ${formattedMatches}
+      <script src="${highlightJsCdn}"></script>
+      <script>hljs.highlightAll();</script>
+    </body>
+    </html>
+  `;
+}
+
+function escapeHtml(unsafe: string): string {
+  return unsafe
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 export function activate(context: vscode.ExtensionContext) {
   // Register the Color Provider
   const colorProvider = vscode.languages.registerColorProvider(
@@ -2247,6 +2292,83 @@ ${selectedText}
   );
 
   context.subscriptions.push(makeRankColumns);
+
+  // Search Question
+  // ctrl+alt+f
+
+  let currentPanel: vscode.WebviewPanel | undefined;
+
+  let disposable = vscode.commands.registerCommand(
+    'decipher-niq-package.findMatchingLabel',
+    async () => {
+      const editor = vscode.window.activeTextEditor;
+
+      if (!editor) {
+        vscode.window.showErrorMessage('No active editor found.');
+        return;
+      }
+
+      const document = editor.document;
+      const selection = editor.selection;
+      const selectedText = document.getText(selection);
+
+      if (!selectedText) {
+        vscode.window.showErrorMessage('No text selected.');
+        return;
+      }
+
+      if (document.languageId !== 'xml') {
+        vscode.window.showErrorMessage(
+          'This command is only applicable to XML files.'
+        );
+        return;
+      }
+
+      const documentText = document.getText();
+      const regex = new RegExp(
+        `<([^\\s>]+)[^>]*label="${selectedText}"[^>]*>([\\s\\S]*?)<\\/\\1>`,
+        'g'
+      );
+      let matches = [];
+      let match;
+
+      while ((match = regex.exec(documentText)) !== null) {
+        matches.push(match[0]);
+      }
+
+      if (matches.length === 0) {
+        vscode.window.showInformationMessage(
+          `No matches found for label="${selectedText}".`
+        );
+        return;
+      }
+
+      const htmlContent = generateHtml(matches);
+
+      if (currentPanel) {
+        // Reuse existing panel
+        currentPanel.webview.html = htmlContent;
+        currentPanel.reveal(vscode.ViewColumn.One); // Bring the panel to the front
+      } else {
+        // Create a new panel
+        currentPanel = vscode.window.createWebviewPanel(
+          'xmlPreview',
+          `Search Question`,
+          vscode.ViewColumn.One,
+          { enableScripts: true }
+        );
+
+        currentPanel.webview.html = htmlContent;
+
+        // Handle panel disposal
+        currentPanel.onDidDispose(() => {
+          currentPanel = undefined;
+        });
+      }
+    }
+  );
+
+  context.subscriptions.push(disposable);
 }
 
 class HexColorProvider implements vscode.DocumentColorProvider {
