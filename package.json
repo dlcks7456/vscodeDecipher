@@ -1,10 +1,10 @@
 {
   "name": "decipher-niq-package",
-  "displayName": "decipher-niq-package",
+  "displayName": "Decipher NIQ Package",
   "description": "Decipher ShortCut and Snippet for NIQ KOR SUD",
   "publisher": "NIQ KOR SUD. Chan.Lee",
   "icon": "images/icon.png",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/dlcks7456/vscodeDecipher.git"
