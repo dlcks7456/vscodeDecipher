@@ -4339,7 +4339,7 @@
   "QCNote_Snippet": {
     "prefix": "qc",
     "scope": "xml",
-    "body": ["<note sst=\"0\">", "## VER ${1:1}", "#### ${2:QID}", "- $0", "</note>"],
+    "body": ["<note>", "## VER ${1:1}", "#### ${2:QID}", "- $0", "</note>"],
     "description": "DecipherTag/QCNote"
   },
 
