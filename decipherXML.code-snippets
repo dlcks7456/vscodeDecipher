@@ -2423,9 +2423,7 @@
   "BoxShadow_Snippet": {
     "prefix": "shadow",
     "scope": "xml",
-    "body": [
-      "box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);"
-    ],
+    "body": ["box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);"],
     "description": "CSSLibrary/BoxShadow"
   },
 
@@ -2730,9 +2728,7 @@
   "CustomButtonStyle_Snippet": {
     "prefix": "btn",
     "scope": "xml",
-    "body": [
-      "ss:questionClassNames=\"sp-custom-btn btn-mw-500${1: btn-cols-1}\""
-    ],
+    "body": ["ss:questionClassNames=\"sp-custom-btn btn-mw-500${1: btn-cols-1}\""],
     "description": "CustomButton/CustomButtonStyle"
   },
 
@@ -3290,11 +3286,7 @@
   "Legends_Snippet": {
     "prefix": "legend",
     "scope": "xml",
-    "body": [
-      "colLegendRows=\"$0\"",
-      "rowLegend=\"both\"",
-      "colLegend=\"both\""
-    ],
+    "body": ["colLegendRows=\"$0\"", "rowLegend=\"both\"", "colLegend=\"both\""],
     "description": "DecipherOptions/Legends"
   },
 
@@ -4055,12 +4047,7 @@
   "NetPromoterScoreOptions_Snippet": {
     "prefix": "nps.opt",
     "scope": "xml",
-    "body": [
-      "nps:legendPosition=\"Below\"",
-      "nps:leftLegend=\"\"",
-      "nps:midLegend=\"\"",
-      "nps:rightLegend=\"\""
-    ],
+    "body": ["nps:legendPosition=\"Below\"", "nps:leftLegend=\"\"", "nps:midLegend=\"\"", "nps:rightLegend=\"\""],
     "description": "DecipherQuestions/NetPromoterScoreOptions"
   },
 
@@ -4282,9 +4269,7 @@
   "ConditionTag_Snippet": {
     "prefix": "condition",
     "scope": "xml",
-    "body": [
-      "<condition label=\"${1:[QID]}\" cond=\"${2:[COND]}\">$0</condition>"
-    ],
+    "body": ["<condition label=\"${1:[QID]}\" cond=\"${2:[COND]}\">$0</condition>"],
     "description": "DecipherTag/ConditionTag"
   },
 
@@ -4363,10 +4348,7 @@
   "QuotaTag_Snippet": {
     "prefix": "quota",
     "scope": "xml",
-    "body": [
-      "<quota label=\"${1:[QUOTA]}\" sheet=\"${1:[QUOTA]}\"/>",
-      "<suspend/>"
-    ],
+    "body": ["<quota label=\"${1:[QUOTA]}\" sheet=\"${1:[QUOTA]}\"/>", "<suspend/>"],
     "description": "DecipherTag/QuotaTag"
   },
 
@@ -4404,9 +4386,7 @@
   "TermTag_Snippet": {
     "prefix": "term",
     "scope": "xml",
-    "body": [
-      "<term label=\"${1:[QID]}_Term\" cond=\"${2:[COND]}\">${1:[QID]} term</term>"
-    ],
+    "body": ["<term label=\"${1:[QID]}_Term\" cond=\"${2:[COND]}\">${1:[QID]} term</term>"],
     "description": "DecipherTag/TermTag"
   },
 
@@ -4744,9 +4724,7 @@
   "CardsortChangeCurrentTextCopy_Snippet": {
     "prefix": "cardsort.show.text.copy",
     "scope": "xml",
-    "body": [
-      "<style copy=\"cardsort_current_card\" name=\"question.after\" wrap=\"ready\"/>"
-    ],
+    "body": ["<style copy=\"cardsort_current_card\" name=\"question.after\" wrap=\"ready\"/>"],
     "description": "DynamicQuestions/CardsortChangeCurrentTextCopy"
   },
 
@@ -5489,10 +5467,7 @@
   "ThisOrThat_Snippet": {
     "prefix": "thisorthat",
     "scope": "xml",
-    "body": [
-      "ss:rowClassNames=\"this-or-that ${1:base1}-this\"",
-      "ss:rowClassNames=\"this-or-that ${1:base1}-that\""
-    ],
+    "body": ["ss:rowClassNames=\"this-or-that ${1:base1}-this\"", "ss:rowClassNames=\"this-or-that ${1:base1}-that\""],
     "description": "JavaScriptLibrary/ThisOrThat"
   },
 
@@ -6535,11 +6510,7 @@
   "LoadRecord_Snippet": {
     "prefix": "rec",
     "scope": "xml",
-    "body": [
-      "rec = loadRecord(\"selfserve/548/${1:[PID]}\", \"${2:[KEY]}\", ${2:[KEY]})",
-      "if rec:",
-      "  $0"
-    ],
+    "body": ["rec = loadRecord(\"selfserve/548/${1:[PID]}\", \"${2:[KEY]}\", ${2:[KEY]})", "if rec:", "  $0"],
     "description": "PythonLibrary/LoadRecord"
   },
 
@@ -6989,9 +6960,7 @@
   "RankNone_Snippet": {
     "prefix": "rk.none",
     "scope": "xml",
-    "body": [
-      "<row label=\"r$0\" randomize=\"0\" value=\"$0\" okUnique=\"1\">없음</row>"
-    ],
+    "body": ["<row label=\"r$0\" randomize=\"0\" value=\"$0\" okUnique=\"1\">없음</row>"],
     "description": "RankQuestion/RankNone"
   },
 
@@ -7182,7 +7151,9 @@
       "        for x in row_label:",
       "          rowCond.append(x)",
       "",
-      "      if str(rank_qid.o.shuffle).strip() == 'rows':",
+      "      shuffles = str(rank_qid.o.shuffle).strip().split(',')",
+      "",
+      "      if 'rows' in shuffles :",
       "        rank_qid.rows.order = [scale_qid.attr(each).index for each in sum(sort_rows, [])]",
       "",
       "      skip_cond = all(len(row) == 1 for row in rank_able_answer)",
@@ -7803,9 +7774,7 @@
   "StepByStepQuestionValidationSet_Snippet": {
     "prefix": "sbs.vali",
     "scope": "xml",
-    "body": [
-      "sbs_validation([${1:[QID]}x1, ${1:[QID]}x2, ${1:[QID]}x3], ${1:[QID]}none)"
-    ],
+    "body": ["sbs_validation([${1:[QID]}x1, ${1:[QID]}x2, ${1:[QID]}x3], ${1:[QID]}none)"],
     "description": "StepByStep/StepByStepQuestionValidationSet"
   },
 
@@ -8020,13 +7989,7 @@
   "PageHeadStyle_Snippet": {
     "prefix": "page.head",
     "scope": "xml",
-    "body": [
-      "<style name=\"page.head\"><![CDATA[",
-      "<style>",
-      "${0}",
-      "</style>",
-      "]]></style>"
-    ],
+    "body": ["<style name=\"page.head\"><![CDATA[", "<style>", "${0}", "</style>", "]]></style>"],
     "description": "XmlStyleSystem/PageHeadStyle"
   },
 
@@ -8050,11 +8013,7 @@
   "QuestionAfterStyleTag_Snippet": {
     "prefix": "question.after",
     "scope": "xml",
-    "body": [
-      "<style name=\"question.after\" wrap=\"ready\"><![CDATA[",
-      "${0}",
-      "]]></style>"
-    ],
+    "body": ["<style name=\"question.after\" wrap=\"ready\"><![CDATA[", "${0}", "]]></style>"],
     "description": "XmlStyleSystem/QuestionAfterStyleTag"
   },
 
@@ -8526,11 +8485,7 @@
   "RespviewClientMeta_Snippet": {
     "prefix": "resp.client.meta",
     "scope": "xml",
-    "body": [
-      "<style name=\"respview.client.meta\"> <![CDATA[",
-      "",
-      "]]></style>"
-    ],
+    "body": ["<style name=\"respview.client.meta\"> <![CDATA[", "", "]]></style>"],
     "description": "XmlStyleSystem/RespviewClientMeta"
   },
 
@@ -8785,9 +8740,7 @@
   "CommentCalloutCopy_Snippet": {
     "prefix": "callout.copy",
     "scope": "xml",
-    "body": [
-      "<style name='survey.question.instructions' copy=\"comment_callout\" arg:calloutHeader=\"${1:[TAB1]}\"/>"
-    ],
+    "body": ["<style name='survey.question.instructions' copy=\"comment_callout\" arg:calloutHeader=\"${1:[TAB1]}\"/>"],
     "description": "XmlStyleSystemCustom/CommentCalloutCopy"
   },
 
@@ -8921,9 +8874,7 @@
   "ElementTextSelectCustomCopy_Snippet": {
     "prefix": "el.text.select",
     "scope": "xml",
-    "body": [
-      "<style copy=\"text_to_select\" arg:optionItems=\"${1:range(2021, 2025)}\" name=\"el.text\"/>"
-    ],
+    "body": ["<style copy=\"text_to_select\" arg:optionItems=\"${1:range(2021, 2025)}\" name=\"el.text\"/>"],
     "description": "XmlStyleSystemCustom/ElementTextSelectCustomCopy"
   },
 
@@ -9270,18 +9221,14 @@
   "NoElementTextCopy_Snippet": {
     "prefix": "no.el.text.copy",
     "scope": "xml",
-    "body": [
-      "<style copy=\"no_els_text\" arg:textTitle=\"$0\" name=\"el.text\"/>"
-    ],
+    "body": ["<style copy=\"no_els_text\" arg:textTitle=\"$0\" name=\"el.text\"/>"],
     "description": "XmlStyleSystemCustom/NoElementTextCopy"
   },
 
   "NoRowsInputCopy_Snippet": {
     "prefix": "no.el.ip.copy",
     "scope": "xml",
-    "body": [
-      "<style copy=\"no_els_input\" arg:numberTitle=\"$0\" name=\"el.text\"/>"
-    ],
+    "body": ["<style copy=\"no_els_input\" arg:numberTitle=\"$0\" name=\"el.text\"/>"],
     "description": "XmlStyleSystemCustom/NoRowsInputCopy"
   },
 
@@ -9495,9 +9442,7 @@
   "TextareaWithTitleCopy_Snippet": {
     "prefix": "textarea.title.copy",
     "scope": "xml",
-    "body": [
-      "<style copy=\"textarea_title\" arg:subTitle=\"$0\" name=\"el.textarea\"/>"
-    ],
+    "body": ["<style copy=\"textarea_title\" arg:subTitle=\"$0\" name=\"el.textarea\"/>"],
     "description": "XmlStyleSystemCustom/TextareaWithTitleCopy"
   },
 
@@ -9570,9 +9515,7 @@
   "ToggleGroupColumnCSSCopy_Snippet": {
     "prefix": "tog.group.cols.copy",
     "scope": "xml",
-    "body": [
-      "<style name=\"page.head\" copy=\"tog_group_cols\" arg:colCount=\"2\"/>"
-    ],
+    "body": ["<style name=\"page.head\" copy=\"tog_group_cols\" arg:colCount=\"2\"/>"],
     "description": "XmlStyleSystemCustom/ToggleGroupColumnCSSCopy"
   },
 
@@ -9714,9 +9657,7 @@
   "TopTextCopy_Snippet": {
     "prefix": "top.text.copy",
     "scope": "xml",
-    "body": [
-      "<style name='survey.question' arg:showText=\"$0\" copy=\"top_text\"/>"
-    ],
+    "body": ["<style name='survey.question' arg:showText=\"$0\" copy=\"top_text\"/>"],
     "description": "XmlStyleSystemCustom/TopTextCopy"
   },
 
@@ -9737,9 +9678,7 @@
   "XMLCommentBoxCopy_Snippet": {
     "prefix": "comment.box.copy",
     "scope": "xml",
-    "body": [
-      "<style copy=\"comment_box\" name='survey.question.instructions'/>"
-    ],
+    "body": ["<style copy=\"comment_box\" name='survey.question.instructions'/>"],
     "description": "XmlStyleSystemCustom/XMLCommentBoxCopy"
   },
   "RankWithColText": {
